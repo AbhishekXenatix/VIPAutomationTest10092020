@@ -59,7 +59,7 @@ public class TestBase {
 		driver.findElement(By.id("details-button")).click();
 		driver.findElement(By.id("proceed-link")).click();
 		driver.findElement(By.id("login")).sendKeys("Abhishek.g");
-		driver.findElement(By.id("password")).sendKeys("Master@07");
+		driver.findElement(By.id("password")).sendKeys("Samsung@07");
 		driver.findElement(By.id("submitLogin")).click();
 		String i = driver.getCurrentUrl();
 		System.out.println(i);

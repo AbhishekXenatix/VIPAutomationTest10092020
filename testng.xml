@@ -10,8 +10,9 @@
   
   <classes>
   
-<class name="TestScript.TestCases"></class>
-<class name="TestScript.ShopListTestCase"></class>
+<!-- <class name="TestScript.TestCases"></class>
+<class name="TestScript.SettingTestCase"></class> -->
+<class name="TestScript.RegressionTest"></class>
 
   </classes>
   

@@ -1,5 +1,6 @@
 package Util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,6 +10,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.WebElement;
 
 import VIPqabase.TestBase;
 
@@ -19,6 +21,7 @@ public class Helper extends TestBase{
 
 	private static String TEST_DATA_SHEET_PATH = "./src/main/java/Util/VIPTestData.xlsx";
 	public static String CONTACT_SHEET_NAME  = "Sheet1";
+	
 
 
 
@@ -55,6 +58,19 @@ public class Helper extends TestBase{
 	}
 	
 	
+	public  boolean isFileDownloaded(String downloadPath, String fileName) {
+		boolean flag = false;
+	    File dir = new File(downloadPath);
+	    File[] dir_contents = dir.listFiles();
+	  	    
+	    for (int i = 0; i < dir_contents.length; i++) {
+	        if (dir_contents[i].getName().equals(fileName))
+	            return flag=true;
+	            }
+
+	    return flag;
+	}
+	
 	
 	public static void staticWait(int time) {
         try {
@@ -66,7 +82,7 @@ public class Helper extends TestBase{
 	
 	
 	
-	
+
 	
 	
 	

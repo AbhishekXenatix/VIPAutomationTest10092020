@@ -4,12 +4,12 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="TestScript.TestCases">
+      <class name="TestScript.RegressionTest">
         <methods>
-          <include name="TC_003_Terminal"/>
+          <include name="TestCase_018_PointSchemeShopList"/>
           <include name="BaseCar"/>
         </methods>
-      </class> <!-- TestScript.TestCases -->
+      </class> <!-- TestScript.RegressionTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

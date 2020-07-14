@@ -1,9 +1,13 @@
-Util\ExtentTestManager.class
+DashBoard\DailyReport.class
 DashBoard\MerchanList.class
+DashBoard\MonthlyReport.class
+DashBoard\UserGroupPermission.class
+Util\ExtentManager.class
+DashBoard\Transactions.class
+VIPqabase\TestBase.class
+Util\ExtentTestManager.class
 Util\Helper.class
 Util\ExtentTestListner.class
 DashBoard\Terminal.class
-DashBoard\UserGroupPermission.class
-Util\ExtentManager.class
-VIPqabase\TestBase.class
+DashBoard\UserListForSetting.class
 DashBoard\ShopGroupManagement.class

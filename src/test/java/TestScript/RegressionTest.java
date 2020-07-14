@@ -34,7 +34,7 @@ public class RegressionTest extends TestBase{
 	
 	
 	
-	@Test(priority=1,enabled=false ) 
+	@Test(priority=1,enabled=true ) 
 	public void TestCase_001_Click_Shop_menu() throws InterruptedException  {
 		 
 		  shopgroupm.Createshop();
@@ -43,7 +43,7 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	
-	@Test(priority=2,enabled=false ) 
+	@Test(priority=2,enabled=true ) 
 	public void TestCase_002_Shop_menu() throws InterruptedException  {
 		 
 		  shopgroupm. GroupDownloadPDF();
@@ -57,7 +57,7 @@ public class RegressionTest extends TestBase{
 		  return data;
 	  }
 	  
-	  @Test(priority=3, enabled=false,dataProvider = "getContactsTestData")
+	  @Test(priority=3, enabled=true,dataProvider = "getContactsTestData")
 	  public void TestCase_003_Create_Shop_list(String sid, String tradingname, String rcenter, String propertyid ,String shopid,String grantid,
 				String description,String mailingaddress1,String mailingaddress2,String mailingaddress3,String contactperson,String jobtitle
 				,String phonenumber,String emailaddress,String vendorcode,String contractno,String chargeonearn,String chargonburn ,String companyname
@@ -74,17 +74,26 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	  
+	  @Test(priority=4, enabled=true)
+	  public void TestCase_004_PointSchemeShopList() throws AWTException {
+		  
+		 
+		  ml.CreatePointScheme();
+		  ml.UpdatePointScheme();
+		 
+	  }
 	  
-	  @Test(priority=4,enabled=false)
-		  public void TestCase_004_shopAdvSearch() {
+	  
+	  @Test(priority=5,enabled=true)
+		  public void TestCase_005_shopAdvSearch() {
 			  
 			  ml.ShopListAdvancedSearch();
 			  
 		  }
 	  
 	  
-	  @Test(priority=5,enabled=false)
-	  public void TestCase_005_shop_Download() {
+	  @Test(priority=6,enabled=true)
+	  public void TestCase_006_shop_Download() {
 		  
 	      ml.ShopDownloadPDF();
 	      ml.ShopDownloadExcel();
@@ -92,26 +101,26 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=6,enabled=false ) 
+	  @Test(priority=7,enabled=true ) 
 	  
-	  public void TestCase_006_Terminal() throws InterruptedException  {
+	  public void TestCase_007_Terminal() throws InterruptedException  {
 	  
 		  terminal.CreatTerminal();
 
 	  }
 	  
 	  
-       @Test(priority=7,enabled=false ) 
-	   public void TestCase_007_TerminalSearch() throws InterruptedException  {
+       @Test(priority=8,enabled=true ) 
+	   public void TestCase_008_TerminalSearch() throws InterruptedException  {
 	  
 	   terminal.TerminalAdvancedSearch();
 	  
 	   }
  
  
-       @Test(priority=8,enabled=false ) 
+       @Test(priority=9,enabled=true ) 
  
-       public void TestCase_008_TerminalDownload() throws InterruptedException  {
+       public void TestCase_009_TerminalDownload() throws InterruptedException  {
       
         terminal.TerminalDownloadPDF();
         terminal.TerminalDownloadExcel();
@@ -119,24 +128,24 @@ public class RegressionTest extends TestBase{
        }
  
 	  
-	  @Test(priority=9, enabled=false)
-	  public void TestCase_009_UserGroupPermission() {
+	  @Test(priority=10, enabled=true)
+	  public void TestCase_010_UserGroupPermission() {
 		  UGP.CreateInternalUserGroup();
 		  UGP.CreatMerchantUserGroup();
 		  
 	  }
 	  
 	  
-	  @Test(priority=10, enabled=false)
-	  public void TestCase_010_UserListForSetting() {
+	  @Test(priority=11, enabled=true)
+	  public void TestCase_011_UserListForSetting() {
 		 ULFS.CreateUserListforMerchant();
 		 ULFS.CreateUserListforInternal();
 		  
 	  }
 	  
 	  
-	  @Test(priority=11, enabled=false)
-	  public void TestCase_011_Transactions() {
+	  @Test(priority=12, enabled=true)
+	  public void TestCase_012_Transactions() {
 		  String from = "1";
 		 
 		  trns.Advancedsearchtransactions();
@@ -145,16 +154,16 @@ public class RegressionTest extends TestBase{
 		 
 	  }
 	  
-	  @Test(priority=12, enabled=false)
-	  public void TestCase_012_TransactionsDownload() {
+	  @Test(priority=13, enabled=true)
+	  public void TestCase_013_TransactionsDownload() {
 		  
 		  trns.TransactionDownloadPDF();
 		  trns.TransactionDownloadExcel();
 	  }
 	  
 	  
-	  @Test(priority=13,enabled=false)
-	  public void TestCase_013_MonthlyReport() {
+	  @Test(priority=14,enabled=true)
+	  public void TestCase_014_MonthlyReport() {
 		  
 		  monthlyreport.ReportMonthly();
 		  monthlyreport.ReportDownloadPDF();
@@ -166,8 +175,8 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=14,enabled=false)
-	  public void TestCase_014_DailyReport() throws InterruptedException {
+	  @Test(priority=15,enabled=true)
+	  public void TestCase_015_DailyReport() throws InterruptedException {
 		  
 		  dailyreport.ReportDaily();
 		  dailyreport.DailyReportSubmitFilter();
@@ -181,15 +190,15 @@ public class RegressionTest extends TestBase{
 	  
 	
 	  
-	  @Test(priority=15, enabled=false)
-	  public void TestCase_015_ShopGroupDelete() {
+	  @Test(priority=16, enabled=true)
+	  public void TestCase_016_ShopGroupDelete() {
 		  
 		  shopgroupm.DeleteGroupname();
 		 
 	  }
 	  
-	  @Test(priority=16, enabled=false)
-	  public void TestCase_016_ShopListDelete() {
+	  @Test(priority=17, enabled=true)
+	  public void TestCase_017_ShopListDelete() {
 		  
 		 ml.DeleteGroupnameforshoplist();
 	  }
@@ -197,22 +206,15 @@ public class RegressionTest extends TestBase{
 	  
 	 
 	  
-	  @Test(priority=17, enabled=false)
-	  public void TestCase_017_TerminalnotApollo() {
+	  @Test(priority=18, enabled=true)
+	  public void TestCase_018_TerminalnotApollo() {
 		  
 		 terminal.createterminalnotapollo();
 		  
 		 
 	  }
 	  
-	  @Test(priority=18, enabled=true)
-	  public void TestCase_018_PointSchemeShopList() throws AWTException {
-		  
-		 
-		  ml.CreatePointScheme();
-		  ml.UpdatePointScheme();
-		 
-	  }
+	 
 	  
 	  
 	  

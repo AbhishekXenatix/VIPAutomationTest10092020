@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 704.935 s <<< FAILURE! - in TestSuite
-TestScript.RegressionTest.TestCase_014_MonthlyReport  Time elapsed: 31.266 s  <<< FAILURE!
-java.lang.AssertionError: Failed to download Expected document expected [true] but found [false]
-	at TestScript.RegressionTest.TestCase_014_MonthlyReport(RegressionTest.java:170)
-

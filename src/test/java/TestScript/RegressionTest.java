@@ -33,10 +33,10 @@ public class RegressionTest extends TestBase{
 	
 	
 	
-	
 	@Test(priority=1,enabled=true ) 
 	public void TestCase_001_Click_Shop_menu() throws InterruptedException  {
 		 
+		
 		  shopgroupm.Createshop();
 		  shopgroupm.ShopGroupList();
 		  shopgroupm.VerifyshopGroupName();

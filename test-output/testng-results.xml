@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="17" total="18" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="80422" started-at="2020-07-13T18:00:22 CST" finished-at="2020-07-13T18:01:42 CST">
+  <suite name="Suite" duration-ms="61850" started-at="2020-07-17T16:43:05 CST" finished-at="2020-07-17T16:44:07 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="80422" started-at="2020-07-13T18:00:22 CST" finished-at="2020-07-13T18:01:42 CST">
-      <class name="TestScript.RegressionTest">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@33c7e1bb]" name="BaseCar" is-config="true" duration-ms="6549" started-at="2020-07-13T18:00:22 CST" finished-at="2020-07-13T18:00:28 CST">
+    <test name="Test" duration-ms="61850" started-at="2020-07-17T16:43:05 CST" finished-at="2020-07-17T16:44:07 CST">
+      <class name="TestScript.JiraTestCases">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.JiraTestCases@1f57539]" name="BaseCar" is-config="true" duration-ms="6609" started-at="2020-07-17T16:43:05 CST" finished-at="2020-07-17T16:43:12 CST">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="PASS" signature="TestCase_018_PointSchemeShopList()[pri:18, instance:TestScript.RegressionTest@33c7e1bb]" name="TestCase_018_PointSchemeShopList" duration-ms="73753" started-at="2020-07-13T18:00:28 CST" finished-at="2020-07-13T18:01:42 CST">
+        <test-method status="PASS" signature="TestCase_001_VSM_218_Update_slip_header1negativevalues()[pri:1, instance:TestScript.JiraTestCases@1f57539]" name="TestCase_001_VSM_218_Update_slip_header1negativevalues" duration-ms="55124" started-at="2020-07-17T16:43:12 CST" finished-at="2020-07-17T16:44:07 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase_018_PointSchemeShopList -->
-      </class> <!-- TestScript.RegressionTest -->
+        </test-method> <!-- TestCase_001_VSM_218_Update_slip_header1negativevalues -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.JiraTestCases@1f57539]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-17T16:44:07 CST" finished-at="2020-07-17T16:44:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestScript.JiraTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

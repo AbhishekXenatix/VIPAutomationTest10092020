@@ -1,11 +1,11 @@
 package DashBoard;
 
-import java.io.File;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +22,7 @@ public class ShopGroupManagement extends TestBase {
 	static SoftAssert softAssertion= new SoftAssert();
 	public static String downloadPath = "C:\\Users\\abhishek.g\\Downloads";
 	 Helper helper = new Helper();
+	 public static Logger log = LogManager.getLogger(ShopGroupManagement.class.getName());
 	
 	
 	
@@ -31,7 +32,8 @@ public class ShopGroupManagement extends TestBase {
 	
 	public void Createshop() throws InterruptedException {
 
-		System.out.println("Create Shop Group ..");
+		
+		log.info("Create Shop Group ..");
 		//click on shop for open group management 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();

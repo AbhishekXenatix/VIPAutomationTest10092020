@@ -1,8 +1,6 @@
 package DashBoard;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -16,8 +14,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.service.ExtentTestManager;
 
 import Util.Helper;
 import VIPqabase.TestBase;
@@ -182,11 +178,11 @@ public class MerchanList extends TestBase {
 			  
 			  WebElement EarnRate = driver.findElement(By.id("genDetail_EARN_RATE"));
 			  Actions actions = new Actions(driver); actions.moveToElement(EarnRate);
-			 // EarnRate.clear();
+			 EarnRate.clear();
 			  EarnRate.sendKeys(earnrate);Helper.staticWait(2000);
 			 
 			  WebElement RedeemRate = driver.findElement(By.id("genDetail_REDEEM_RATIO"));
-			  //RedeemRate.clear();
+			  RedeemRate.clear();
 			  RedeemRate.sendKeys(redeemrate);Helper.staticWait(2000);
 			  
 				  WebElement SlipTitle = driver.findElement(By.id("genDetail_SHOP_TITLE"));
@@ -334,7 +330,7 @@ public class MerchanList extends TestBase {
 
 		 
 		
-		driver.findElement(By.xpath("//td[contains(text(),'175')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//td[contains(text(),'178')]")).click();Helper.staticWait(2000);
 		driver.findElement(By.xpath("//*[@id=\"table_block_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(2000);
 		
 		WebElement ER = driver.findElement(By.id("DTE_Field_EARN_RATE"));ER.clear();ER.sendKeys("2");Helper.staticWait(2000);

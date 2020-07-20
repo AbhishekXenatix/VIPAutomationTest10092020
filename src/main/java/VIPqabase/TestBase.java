@@ -78,11 +78,13 @@ public class TestBase {
 	
 	
 	
-	/*
-	 * @AfterClass public void close() { driver.quit(); driver.close(); }
-	 */
-	 
+	@AfterClass
+	public void teardown() {
+
+		//driver.close();
+		//driver = null;
 	
+	}
 	
 
 

@@ -87,7 +87,7 @@ public class Terminal extends TestBase{
 		 WebElement ele01 = driver.findElement(By.id("genDetail_SHOP_ID"));
 		 ele01.click(); 
 		Select select = new Select(ele01); 
-		 select.selectByVisibleText("ert");Helper.staticWait(2000);
+		 select.selectByVisibleText("Mannings");Helper.staticWait(3000);
 		 
 		 
 		 WebElement activestatus = driver.findElement(By.id("genDetail_ACTIVED"));

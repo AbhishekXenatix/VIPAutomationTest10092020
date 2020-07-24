@@ -4,13 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="TestScript.JiraTestCases">
+      <class name="TestScript.RegressionTest">
         <methods>
-          <include name="TestCase_001_VSM_218_Update_slip_header1negativevalues"/>
+          <include name="TestCase_018_TerminalnotApollo"/>
+          <include name="TestCase_008_TerminalSearch"/>
+          <include name="TestCase_004_PointSchemeShopList"/>
           <include name="BaseCar"/>
+          <include name="TestCase_014_MonthlyReport"/>
           <include name="teardown"/>
+          <include name="TestCase_012_Transactions"/>
         </methods>
-      </class> <!-- TestScript.JiraTestCases -->
+      </class> <!-- TestScript.RegressionTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -7,6 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.Status;
+
+import Util.ExtentTestManager;
 import Util.Helper;
 import VIPqabase.TestBase;
 
@@ -92,6 +95,22 @@ public void CreateUserListforInternal() {
 		
 	
 	}
+
+
+
+
+
+public void deleteall() {
+	
+	//terminal delete
+	
+	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[5]/a")).click();Helper.staticWait(2000);
+	driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("5F00000604");;Helper.staticWait(2000);
+	driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(2000);
+	driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(2000);
+	 ExtentTestManager.getTest().log(Status.INFO,  "***********Delete from Terminal ");
+	
+}
 	
 	
 	

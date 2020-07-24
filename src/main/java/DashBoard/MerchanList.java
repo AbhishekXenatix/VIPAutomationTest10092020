@@ -249,7 +249,7 @@ public class MerchanList extends TestBase {
 	}
 	
 	
-	public static void CreatePointScheme() throws AWTException {
+	public  void CreatePointScheme() throws AWTException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("Create Point Scheme from shop list");
 		//shop menu
@@ -477,10 +477,89 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.id("YESDele")).click();Helper.staticWait(3000);
 	}
 	
-
-
+	
+	public void DeleteGroupnameforshoplistSeven() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//shop menu
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		//shop list
+		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+		//click on Advance search 
+		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
+		//enter value in group name search 
+		
+		
+		WebElement elementshopgroupforshoplist = driver.findElement(By.id("advSearch_Select_trading_name"));
+		elementshopgroupforshoplist.click();Helper.staticWait(3000);
+     	Select select = new Select(elementshopgroupforshoplist); 
+     	
+		 List<WebElement> dropdownshopgroupforshoplist = select.getOptions();
+		 for(int i=0;i<dropdownshopgroupforshoplist.size();i++){
+			 String drop_down_shopgroupforshoplist=dropdownshopgroupforshoplist.get(i).getText();
+			 System.out.println("dropdown values are " + drop_down_shopgroupforshoplist);  }
+		         select.selectByVisibleText("Seven11");Helper.staticWait(3000);
+		
+		
+	
+		driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
+		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
+		driver.findElement(By.id("YESDele")).click();Helper.staticWait(3000);
+	}
 	
 	
+	
+	
+public void VerifyshopMerchantNameM() throws InterruptedException  {
+		String nodata ="No data available in table";
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		try {
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+		  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Mannings");Helper.staticWait(3000);
+		WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
+			System.out.println((searchresult).getText());
+			if(((searchresult).getText().equalsIgnoreCase(nodata))) {
+				System.out.println("Create a new Shop");
+			} else {
+				System.out.println("Please delete Manning shop");
+				DeleteGroupnameforshoplist();
+		}
+		}
+		
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+
+public void VerifyshopMerchantNameS() throws InterruptedException  {
+	String nodata ="No data available in table";
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	try {
+	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+	  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Seven11");Helper.staticWait(3000);
+	WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
+		System.out.println((searchresult).getText());
+		if(((searchresult).getText().equalsIgnoreCase(nodata))) {
+			System.out.println("Create a new Shop");
+		} else {
+			System.out.println("Please delete Seven11 shop");
+			DeleteGroupnameforshoplistSeven();
+			
+	}
+	}
+	
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	
+}
+	
+
+
 
 
 

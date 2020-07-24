@@ -43,11 +43,27 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	
-	@Test(priority=2,enabled=true ) 
-	public void TestCase_002_Shop_menu() throws InterruptedException  {
+	@Test(priority=2,enabled=false ) 
+	public void TestCase_002_Shop_menu_DownloadPDF() throws InterruptedException  {
 		 
 		  shopgroupm. GroupDownloadPDF();
+		 
+	  }
+	
+	@Test(priority=3,enabled=false ) 
+	public void TestCase_003_Shop_menu_DownloadExcel() throws InterruptedException  {
+		 
+		
 		  shopgroupm.GroupDownloadExcel();
+	  }
+	
+
+	@Test(priority=4,enabled=false ) 
+	public void TestCase_004_Shop_menu_Verify() throws InterruptedException  {
+		 
+		ml.VerifyshopMerchantNameM();
+		ml.VerifyshopMerchantNameS();
+		  
 	  }
 	
 	
@@ -57,8 +73,8 @@ public class RegressionTest extends TestBase{
 		  return data;
 	  }
 	  
-	  @Test(priority=3, enabled=true,dataProvider = "getContactsTestData")
-	  public void TestCase_003_Create_Shop_list(String sid, String tradingname, String rcenter, String propertyid ,String shopid,String grantid,
+	  @Test(priority=5, enabled=false,dataProvider = "getContactsTestData")
+	  public void TestCase_005_Create_Shop_list(String sid, String tradingname, String rcenter, String propertyid ,String shopid,String grantid,
 				String description,String mailingaddress1,String mailingaddress2,String mailingaddress3,String contactperson,String jobtitle
 				,String phonenumber,String emailaddress,String vendorcode,String contractno,String chargeonearn,String chargonburn ,String companyname
 				,String earnrate,String redeemrate, String sliptitle,String slipheader1,String slipheader2,String slipfooter,String comments
@@ -74,78 +90,120 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	  
-	  @Test(priority=4, enabled=true)
-	  public void TestCase_004_PointSchemeShopList() throws AWTException {
+	  @Test(priority=6, enabled=false)
+	  public void TestCase_006_PointSchemeShopList() throws AWTException {
 		  
 		 
 		  ml.CreatePointScheme();
+	
+		 
+	  }
+	  
+	  
+	  @Test(priority=7, enabled=false)
+	  public void TestCase_007_PointSchemeUpdateShopList() throws AWTException {
+		  
+		 
+		
 		  ml.UpdatePointScheme();
 		 
 	  }
 	  
 	  
-	  @Test(priority=5,enabled=true)
-		  public void TestCase_005_shopAdvSearch() {
+	  @Test(priority=8,enabled=false)
+		  public void TestCase_008_shopAdvSearch() {
 			  
 			  ml.ShopListAdvancedSearch();
 			  
 		  }
 	  
 	  
-	  @Test(priority=6,enabled=true)
-	  public void TestCase_006_shop_Download() {
+	  @Test(priority=9,enabled=false)
+	  public void TestCase_009_shop_DownloadPDF() {
 		  
 	      ml.ShopDownloadPDF();
+	   
+		  
+	  }
+	  
+	  
+	  @Test(priority=10,enabled=false)
+	  public void TestCase_010_shop_DownloadExcel() {
+		  
 	      ml.ShopDownloadExcel();
 		  
 	  }
 	  
 	  
-	  @Test(priority=7,enabled=true ) 
+	  @Test(priority=11,enabled=false ) 
 	  
-	  public void TestCase_007_Terminal() throws InterruptedException  {
+	  public void TestCase_011_Terminal() throws InterruptedException  {
 	  
 		  terminal.CreatTerminal();
 
 	  }
 	  
 	  
-       @Test(priority=8,enabled=true ) 
-	   public void TestCase_008_TerminalSearch() throws InterruptedException  {
+       @Test(priority=12,enabled=false ) 
+	   public void TestCase_012_TerminalSearch() throws InterruptedException  {
 	  
 	   terminal.TerminalAdvancedSearch();
 	  
 	   }
  
  
-       @Test(priority=9,enabled=true ) 
+       @Test(priority=13,enabled=false ) 
  
-       public void TestCase_009_TerminalDownload() throws InterruptedException  {
+       public void TestCase_013_TerminalDownloadPDF() throws InterruptedException  {
       
         terminal.TerminalDownloadPDF();
+ 
+       }
+       
+       @Test(priority=14,enabled=false ) 
+       
+       public void TestCase_014_TerminalDownloadExcel() throws InterruptedException  {
+      
+        
         terminal.TerminalDownloadExcel();
  
        }
  
 	  
-	  @Test(priority=10, enabled=true)
-	  public void TestCase_010_UserGroupPermission() {
+	  @Test(priority=15, enabled=false)
+	  public void TestCase_015_UserGroupPermission_Internal() {
 		  UGP.CreateInternalUserGroup();
+		  
+	  }
+	  
+	  
+	  @Test(priority=16, enabled=false)
+	  public void TestCase_016_UserGroupPermission_Merchant() {
+	
 		  UGP.CreatMerchantUserGroup();
 		  
 	  }
 	  
 	  
-	  @Test(priority=11, enabled=true)
-	  public void TestCase_011_UserListForSetting() {
+	  @Test(priority=17, enabled=false)
+	  public void TestCase_017_UserListForSetting_CreateMerchant() {
 		 ULFS.CreateUserListforMerchant();
+		
+		  
+	  }
+	  
+	  
+	  @Test(priority=18, enabled=false)
+	  public void TestCase_018_UserListForSetting_CreateInternal() {
+		
 		 ULFS.CreateUserListforInternal();
 		  
 	  }
 	  
 	  
-	  @Test(priority=12, enabled=true)
-	  public void TestCase_012_Transactions() {
+	  
+	  @Test(priority=19, enabled=false)
+	  public void TestCase_019_Transactions() {
 		  String from = "1";
 		 
 		  trns.Advancedsearchtransactions();
@@ -154,66 +212,118 @@ public class RegressionTest extends TestBase{
 		 
 	  }
 	  
-	  @Test(priority=13, enabled=true)
-	  public void TestCase_013_TransactionsDownload() {
+	  @Test(priority=20, enabled=false)
+	  public void TestCase_020_TransactionsDownloadPDF() {
 		  
 		  trns.TransactionDownloadPDF();
+		
+	  }
+	  
+	  
+	  @Test(priority=21, enabled=false)
+	  public void TestCase_021_TransactionsDownloadExcel() {
+		  
+		
 		  trns.TransactionDownloadExcel();
 	  }
 	  
 	  
-	  @Test(priority=14,enabled=true)
-	  public void TestCase_014_MonthlyReport() {
+	  @Test(priority=22,enabled=false)
+	  public void TestCase_022_MonthlyReport() {
 		  
 		  monthlyreport.ReportMonthly();
-		  monthlyreport.ReportDownloadPDF();
-		  monthlyreport.ReportDownloadExcel();
-		  
-		  
-		  
-		  
+		 
+		    
 	  }
 	  
 	  
-	  @Test(priority=15,enabled=true)
-	  public void TestCase_015_DailyReport() throws InterruptedException {
+	  @Test(priority=23,enabled=false)
+	  public void TestCase_023_MonthlyReportPDF() {
+		  
+		
+		  monthlyreport.ReportDownloadPDF();
+		 
+		    
+	  }
+	  
+	  
+	  
+	  @Test(priority=24,enabled=false)
+	  public void TestCase_024_MonthlyReportExcel() {
+		  
+		  monthlyreport.ReportDownloadExcel();
+		    
+	  }
+	  
+	  
+	  
+	  @Test(priority=25,enabled=false)
+	  public void TestCase_025_DailyReport() throws InterruptedException {
 		  
 		  dailyreport.ReportDaily();
 		  dailyreport.DailyReportSubmitFilter();
+		 
+	  }
+	  
+	  @Test(priority=26,enabled=false)
+	  public void TestCase_026_DailyReportPDF() throws InterruptedException {
+		  
+		
 		  dailyreport.DailyReportpDownloadPDF();
+		 
+	  }
+	  
+	  
+	  
+	  @Test(priority=27,enabled=false)
+	  public void TestCase_027_DailyReportExcel() throws InterruptedException {
+		  
+		  
+		
 		  dailyreport.DailyReportDownloadExcel();
 	  }
 	  
 	  
 	  
 	  
-	  
-	
-	  
-	  @Test(priority=16, enabled=true)
-	  public void TestCase_016_ShopGroupDelete() {
-		  
-		  shopgroupm.DeleteGroupname();
-		 
-	  }
-	  
-	  @Test(priority=17, enabled=true)
-	  public void TestCase_017_ShopListDelete() {
-		  
-		 ml.DeleteGroupnameforshoplist();
-	  }
-	  
-	  
-	 
-	  
-	  @Test(priority=18, enabled=true)
-	  public void TestCase_018_TerminalnotApollo() {
+	  @Test(priority=28, enabled=false)
+	  public void TestCase_028_TerminalnotApollo() {
 		  
 		 terminal.createterminalnotapollo();
 		  
 		 
 	  }
 	  
+	  
+	  
+	  
+	
+	  
+	  @Test(priority=29, enabled=false)
+	  public void TestCase_029_ShopGroupDelete() {
+		  
+		  shopgroupm.DeleteGroupname();
+		 
+	  }
+	  
+	  @Test(priority=30, enabled=false)
+	  public void TestCase_030_ShopListDelete() {
+		  
+		 ml.DeleteGroupnameforshoplist();
+		 ml.DeleteGroupnameforshoplistSeven();
+	  }
+	  
+	  
+	  @Test(priority=31, enabled=false)
+	  public void TestCase_031_DeleteOthers() {
+		  
+		ULFS.deleteall();
+	  }
+	  
+	  
+	 
+	  
+	
 	 
 	  
 	  

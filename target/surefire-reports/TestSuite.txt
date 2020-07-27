@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.287 s <<< FAILURE! - in TestSuite
-TestScript.RegressionTest.TestCase_001_Click_Shop_menu  Time elapsed: 5.419 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="mm-btn mm-btn_next mm-listitem__btn mm-listitem__text" href="#mm-1" aria-owns="mm-1" aria-haspopup="true">...</a> is not clickable at point (171, 110). Other element would receive the click: <h1>...</h1>
-  (Session info: chrome=84.0.4147.89)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 16d551277bb8c9031cf15d041dc03393
-	at TestScript.RegressionTest.TestCase_001_Click_Shop_menu(RegressionTest.java:40)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.602 s - in TestSuite

@@ -9,11 +9,9 @@
 <!--    <parameter name="BrowserName" value="Edge"></parameter> -->
   
   <classes>
-  
-<!-- <class name="TestScript.TestCases"></class>
-<class name="TestScript.SettingTestCase"></class> -->
-<class name="TestScript.RegressionTest"></class>
-<!-- <class name="TestScript.JiraTestCases"></class> -->
+<class name="TestScript.RegressionTest"></class>  
+<!-- <class name="TestScript.RegressionTestTwo"></class>
+<class name="TestScript.RegressionTestThree"></class> -->
 
   </classes>
   

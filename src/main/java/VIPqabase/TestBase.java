@@ -20,7 +20,7 @@ import Util.ExtentTestListner;
 public class TestBase {
 	
 	public static WebDriver driver;
-	private static  String URL = "https://vips.spectratech.com:9443/index.php";
+	private static  String URL = "https://vips.spectratech.com:8443/index.php";
 	private static String TEST_DATA_SHEET_PATH = "./src/main/java/Util/VIPTestData.xlsx"; 
 	
 	

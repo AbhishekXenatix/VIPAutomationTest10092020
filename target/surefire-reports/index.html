@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTest" hash-for-method="TestCase_001_Click_Shop_menu">TestCase_001_Click_Shop_menu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestScript.RegressionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,30 +128,10 @@
                   <a name="TestCase_001_Click_Shop_menu">
                   </a> <!-- TestCase_001_Click_Shop_menu -->
                   <span class="method-name">TestCase_001_Click_Shop_menu</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;mm-btn mm-btn_next mm-listitem__btn mm-listitem__text&quot; href=&quot;#mm-1&quot; aria-owns=&quot;mm-1&quot; aria-haspopup=&quot;true&quot;&gt;...&lt;/a&gt; is not clickable at point (171, 110). Other element would receive the click: &lt;h1&gt;...&lt;/h1&gt;
-  (Session info: chrome=84.0.4147.89)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SPHKRD05&apos;, ip: &apos;10.1.6.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 16d551277bb8c9031cf15d041dc03393
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at DashBoard.ShopGroupManagement.Createshop(ShopGroupManagement.java:39)
-	at TestScript.RegressionTest.TestCase_001_Click_Shop_menu(RegressionTest.java:40)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -209,12 +189,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestCase_001_Click_Shop_menu')
 data.setCell(0, 2, 'TestScript.RegressionTest')
-data.setCell(0, 3, 3221);
+data.setCell(0, 3, 14061);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,71 +209,31 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">30 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestScript.RegressionTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestCase_026_DailyReportPDF</span>
+                <span class="ignored-method-name">TestCase_010_shop_DownloadPDF</span>
                 <br/>
-                <span class="ignored-method-name">TestCase_005_Create_Shop_list</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_021_TransactionsDownloadExcel</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_010_shop_DownloadExcel</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_014_TerminalDownloadExcel</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_023_MonthlyReportPDF</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_011_Terminal</span>
+                <span class="ignored-method-name">TestCase_008_PointSchemeUpdateShopList</span>
                 <br/>
                 <span class="ignored-method-name">TestCase_006_PointSchemeShopList</span>
                 <br/>
-                <span class="ignored-method-name">TestCase_008_shopAdvSearch</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_018_UserListForSetting_CreateInternal</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_004_Shop_menu_Verify</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_022_MonthlyReport</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_012_TerminalSearch</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_030_ShopListDelete</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_027_DailyReportExcel</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_017_UserListForSetting_CreateMerchant</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_019_Transactions</span>
+                <span class="ignored-method-name">TestCase_006_Create_Shop_list</span>
                 <br/>
                 <span class="ignored-method-name">TestCase_002_Shop_menu_DownloadPDF</span>
                 <br/>
-                <span class="ignored-method-name">TestCase_031_DeleteOthers</span>
+                <span class="ignored-method-name">TestCase_004_Shop_menu_Verifym</span>
+                <br/>
+                <span class="ignored-method-name">TestCase_011_shop_DownloadExcel</span>
+                <br/>
+                <span class="ignored-method-name">TestCase_009_shopAdvSearch</span>
                 <br/>
                 <span class="ignored-method-name">TestCase_003_Shop_menu_DownloadExcel</span>
                 <br/>
-                <span class="ignored-method-name">TestCase_029_ShopGroupDelete</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_007_PointSchemeUpdateShopList</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_028_TerminalnotApollo</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_025_DailyReport</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_015_UserGroupPermission_Internal</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_013_TerminalDownloadPDF</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_024_MonthlyReportExcel</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_020_TransactionsDownloadPDF</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_016_UserGroupPermission_Merchant</span>
-                <br/>
-                <span class="ignored-method-name">TestCase_009_shop_DownloadPDF</span>
+                <span class="ignored-method-name">TestCase_005_Shop_menu_Verifys</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -311,14 +251,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TestCase_001_Click_Shop_menu</span>
-                <span class="method-start">24584 ms</span>
+                <span class="method-start">7492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30036 ms</span>
+                <span class="method-start">21560 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

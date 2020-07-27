@@ -31,27 +31,23 @@ public class DailyReport extends TestBase{
 		System.out.println("Create a Daily Report..");
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
-			driver.findElement(By.xpath("//*[@id=\"mm-2\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+			driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[7]/a")).click();Helper.staticWait(3000);
+			driver.findElement(By.xpath("//*[@id=\"mm-2\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
 			
+		    driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(2000);
+			driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[4]/td[5]/a")).click();Helper.staticWait(3000);
 			
-			
-			DateFormat customFormat = new SimpleDateFormat("dd");
-			Date currentdate = new Date();
-			String D = customFormat.format(currentdate);
-			System.out.println(D);
-			
-			//Date
-			driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(2000);
-			WebElement datePicker = driver.findElement(By.id("ui-datepicker-div"));
-			List<WebElement> noOfColumns = datePicker
-					.findElements(By.tagName("td"));
-			for (WebElement cell : noOfColumns) {
-				if(cell.getText().equals(D)) {
-					cell.findElement(By.linkText(D)).click();
-					break;
-				}
-			}
+			/*
+			 * DateFormat customFormat = new SimpleDateFormat("dd"); Date currentdate = new
+			 * Date(); String D = customFormat.format(currentdate); System.out.println(D);
+			 * 
+			 * //Date driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.
+			 * staticWait(2000); WebElement datePicker =
+			 * driver.findElement(By.id("ui-datepicker-div")); List<WebElement> noOfColumns
+			 * = datePicker .findElements(By.tagName("td")); for (WebElement cell :
+			 * noOfColumns) { if(cell.getText().equals(D)) {
+			 * cell.findElement(By.linkText(D)).click(); break; } }
+			 */
 			
 		}
 	
@@ -70,62 +66,81 @@ public class DailyReport extends TestBase{
 		 for(int i=0;i<DropDownShopGroupDailyReport.size();i++){
 			 String drop_down_ShopGroupDailyReport=DropDownShopGroupDailyReport.get(i).getText();
 			 System.out.println("dropdown values are " + drop_down_ShopGroupDailyReport);  }
-		         select.selectByVisibleText("Spectra QA");Helper.staticWait(3000);
+		         select.selectByVisibleText("Spectra SQA");Helper.staticWait(3000);
 		//driver.findElement(By.xpath("//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click();Helper.staticWait(3000);
 	}
 	
-	public void DailyReportShopFilter() {
+	//public void DailyReportShopFilter() {
 	
 		//Shop Filter 
 		         
-		         WebElement ElementDailyReportShopName = driver.findElement(By.id("advSearch_Select_shop_name"));
-		         ElementDailyReportShopName.click();Helper.staticWait(3000);
-		      	Select sselect = new Select(ElementDailyReportShopName); 
-		      	
-		 		 List<WebElement> DropDownShopNameDailyReport = sselect.getOptions();
-		 		 for(int i=0;i<DropDownShopNameDailyReport.size();i++){
-		 			 String drop_down_ShopNameDailyReport=DropDownShopNameDailyReport.get(i).getText();
-		 			 System.out.println("dropdown values are " + drop_down_ShopNameDailyReport);  }
-		 		         sselect.selectByVisibleText("Welcome");Helper.staticWait(3000);}
+		/*
+		 * WebElement ElementDailyReportShopName =
+		 * driver.findElement(By.id("advSearch_Select_shop_name"));
+		 * ElementDailyReportShopName.click();Helper.staticWait(3000); Select sselect =
+		 * new Select(ElementDailyReportShopName);
+		 * 
+		 * List<WebElement> DropDownShopNameDailyReport = sselect.getOptions(); for(int
+		 * i=0;i<DropDownShopNameDailyReport.size();i++){ String
+		 * drop_down_ShopNameDailyReport=DropDownShopNameDailyReport.get(i).getText();
+		 * System.out.println("dropdown values are " + drop_down_ShopNameDailyReport); }
+		 * sselect.selectByVisibleText("Welcome");Helper.staticWait(3000);}
+		 */
 		 		
 	
-	public void DailyReportPaymentFilter() {
-		//Payment Filter
-		 		         
-		 		         driver.findElement(By.id("advSearch_Select_payment_method")).click();Helper.staticWait(3000);
-		 //cash		         
-		 		         driver.findElement(By.xpath("//*[@id=\"advSearch_Select_payment_method\"]/option[2]")).click();}
-		 		         
+						/*
+						 * public void DailyReportPaymentFilter() { //Payment Filter
+						 * 
+						 * driver.findElement(By.id("advSearch_Select_payment_method")).click();Helper.
+						 * staticWait(3000); //cash driver.findElement(By.xpath(
+						 * "//*[@id=\"advSearch_Select_payment_method\"]/option[1]")).click();}
+						 */
 		
-	public static  void DailyReportCardTierFilter() { 		         
-		 		         
-		 //Card Tier 
-		 		         
-		 		        WebElement ElementDailyReportCardTier = driver.findElement(By.id("advSearch_Select_card_tier"));
-		 		       ElementDailyReportCardTier.click();Helper.staticWait(3000);
-				      	Select cselect = new Select(ElementDailyReportCardTier); 
-				      	
-				 		 List<WebElement> DropDownCardTierDailyReport = cselect.getOptions();
-				 		 for(int i=0;i<DropDownCardTierDailyReport.size();i++){
-				 			 String drop_down_CardTierDailyReport=DropDownCardTierDailyReport.get(i).getText();
-				 			 System.out.println("dropdown values are " + drop_down_CardTierDailyReport);  }
-				 		         cselect.selectByVisibleText("RUBY");Helper.staticWait(3000);
-				 		         
-	}
+						
+						  public static void DailyReportCardTierFilter() {
+						  
+						  //Card Tier
+						  
+							/*
+							 * WebElement ElementDailyReportCardTier =
+							 * driver.findElement(By.id("advSearch_Select_card_tier"));
+							 * ElementDailyReportCardTier.click();Helper.staticWait(3000); Select cselect =
+							 * new Select(ElementDailyReportCardTier);
+							 * 
+							 * List<WebElement> DropDownCardTierDailyReport = cselect.getOptions(); for(int
+							 * i=0;i<DropDownCardTierDailyReport.size();i++){ String
+							 * drop_down_CardTierDailyReport=DropDownCardTierDailyReport.get(i).getText();
+							 * System.out.println("dropdown values are " + drop_down_CardTierDailyReport); }
+							 * cselect.selectByVisibleText("DIAMOND");Helper.staticWait(3000);
+							 */
+						  
+						  
+						  
+						  Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
+					         card.selectByVisibleText("DIAMOND");
+					         card.selectByIndex(6);Helper.staticWait(3000);
+					         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/div/div/div[2]/div/button")).click();Helper.staticWait(5000);
+						  
+						  }
+						 
 	
 	
-	public void DailyReportSubmitFilter() throws InterruptedException {
-		
-		driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[2]/td[5]/a")).click();Helper.staticWait(3000);
-		driver.findElement(By.xpath("//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click();Helper.staticWait(3000);
-		
-	}
-
+						/*
+						 * public void DailyReportSubmitFilter() throws InterruptedException {
+						 * 
+						 * driver.findElement(By.xpath(
+						 * "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[2]/td[5]/a")).click();Helper.
+						 * staticWait(3000); driver.findElement(By.xpath(
+						 * "//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click();Helper.
+						 * staticWait(3000);
+						 * 
+						 * }
+						 */
 	
 	
 	
 	public void DailyReportpDownloadPDF() {
-		String name = "Shop Group List Record.pdf";
+		String fileName = "Shop Group List Record.pdf";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
 		//driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
@@ -149,7 +164,7 @@ public class DailyReport extends TestBase{
 		    ((JavascriptExecutor) driver).executeScript("print()");Helper.staticWait(3000);
 		    driver.switchTo().window(currentHandle);Helper.staticWait(3000);
 		    
-	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, name), "Failed to download Expected document");
+	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, fileName), "Failed to download Expected document");
 		
 		
 	}

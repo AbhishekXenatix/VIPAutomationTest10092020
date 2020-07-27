@@ -26,9 +26,9 @@ public class Transactions extends TestBase {
 		System.out.println("Advanced Search for Transactions..");
 		
 		//click on Transactions button from dashboard
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[4]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[5]/a")).click();Helper.staticWait(15000);
 		
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
+		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
 		
 		//message type 
 		
@@ -55,7 +55,7 @@ public class Transactions extends TestBase {
 		 		 for(int i=0;i<dropdowncardtier.size();i++){
 		 			 String drop_down_cardtier = dropdowncardtier.get(i).getText();
 		 			 System.out.println("dropdown values are " + drop_down_cardtier);  }
-		 		         cselect.selectByVisibleText("RUBY");Helper.staticWait(3000);
+		 		         cselect.selectByVisibleText("GOLD");Helper.staticWait(3000);
 		 		         
 		 		         
 		 		        

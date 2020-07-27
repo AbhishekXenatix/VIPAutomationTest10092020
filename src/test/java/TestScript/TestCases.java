@@ -97,7 +97,7 @@ public class TestCases extends TestBase{
 	  public void TestCase_005_DailyReport() throws InterruptedException {
 		  
 		  dailyreport.ReportDaily();
-		  dailyreport.DailyReportSubmitFilter();
+		 
 		  dailyreport.DailyReportpDownloadPDF();
 		  dailyreport.DailyReportDownloadExcel();
 	  }

@@ -21,7 +21,7 @@ public class UserListForSetting extends TestBase{
 	public void CreateUserListforMerchant() {
 		
 		System.out.println("Create user list for Merchant..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a")).click();
 		//click user list
 		
 		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();
@@ -65,7 +65,7 @@ public class UserListForSetting extends TestBase{
 public void CreateUserListforInternal() {
 		
 		System.out.println("Create user list for Internal..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a")).click();Helper.staticWait(2000);
 		//click user list
 		
 		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();Helper.staticWait(2000);
@@ -104,7 +104,7 @@ public void deleteall() {
 	
 	//terminal delete
 	
-	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[5]/a")).click();Helper.staticWait(2000);
+	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
 	driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("5F00000604");;Helper.staticWait(2000);
 	driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(2000);
 	driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(2000);

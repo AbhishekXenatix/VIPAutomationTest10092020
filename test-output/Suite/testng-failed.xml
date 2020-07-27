@@ -4,17 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="TestScript.RegressionTest">
+      <class name="TestScript.RegressionTestThree">
         <methods>
-          <include name="TestCase_018_TerminalnotApollo"/>
-          <include name="TestCase_008_TerminalSearch"/>
-          <include name="TestCase_004_PointSchemeShopList"/>
+          <include name="TestCase_022_TransactionsDownloadExcel"/>
+          <include name="TestCase_021_TransactionsDownloadPDF"/>
           <include name="BaseCar"/>
-          <include name="TestCase_014_MonthlyReport"/>
           <include name="teardown"/>
-          <include name="TestCase_012_Transactions"/>
         </methods>
-      </class> <!-- TestScript.RegressionTest -->
+      </class> <!-- TestScript.RegressionTestThree -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

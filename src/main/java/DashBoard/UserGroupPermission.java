@@ -19,7 +19,7 @@ public class UserGroupPermission extends TestBase{
 		System.out.println("Create Internal User Group..");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//click on setting 
-		WebElement panelmenu = driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a"));
+		WebElement panelmenu = driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a"));
 		panelmenu.click();Helper.staticWait(2000);
 		//click on user group permission 
 		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
@@ -41,7 +41,7 @@ public void CreatMerchantUserGroup() {
 		System.out.println("Create Merchant User Group..");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//click on setting 
-		WebElement panelmenuform = driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a"));
+		WebElement panelmenuform = driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a"));
 		panelmenuform.click();Helper.staticWait(3000);
 		//click on user group permission 
 		System.out.println("click on setting menu..");

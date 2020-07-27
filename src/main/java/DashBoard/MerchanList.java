@@ -474,7 +474,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
-		driver.findElement(By.id("YESDele")).click();Helper.staticWait(3000);
+		driver.findElement(By.id("YESDele")).click();Helper.staticWait(7000);
 	}
 	
 	
@@ -485,7 +485,7 @@ public class MerchanList extends TestBase {
 		//shop list
 		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
 		//click on Advance search 
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
+		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(7000);
 		//enter value in group name search 
 		
 		
@@ -511,9 +511,9 @@ public class MerchanList extends TestBase {
 	
 	
 public void VerifyshopMerchantNameM() throws InterruptedException  {
-		String nodata ="No data available in table";
+		String nodata ="No matching records found";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		try {
+		
 		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
 		  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Mannings");Helper.staticWait(3000);
@@ -527,20 +527,18 @@ public void VerifyshopMerchantNameM() throws InterruptedException  {
 		}
 		}
 		
-		catch(Exception e) {
-			e.printStackTrace();
-		}
 		
-	}
-
+		
+	
 
 public void VerifyshopMerchantNameS() throws InterruptedException  {
-	String nodata ="No data available in table";
+	String nodata ="No matching records found";
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	try {
+	
 	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
 	driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
 	  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Seven11");Helper.staticWait(3000);
+	  
 	WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
 		System.out.println((searchresult).getText());
 		if(((searchresult).getText().equalsIgnoreCase(nodata))) {
@@ -552,11 +550,9 @@ public void VerifyshopMerchantNameS() throws InterruptedException  {
 	}
 	}
 	
-	catch(Exception e) {
-		e.printStackTrace();
-	}
 	
-}
+	
+
 	
 
 

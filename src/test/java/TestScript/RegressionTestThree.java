@@ -96,7 +96,7 @@ public class RegressionTestThree  extends TestBase {
 	  }
 	  
 	  
-	  @Test(priority=9,enabled=true)
+	  @Test(priority=9,enabled=false)
 	  public void TestCase_024_MonthlyReportPDF() {
 		  
 		
@@ -125,7 +125,7 @@ public class RegressionTestThree  extends TestBase {
 		 
 	  }
 	  
-	  @Test(priority=12,enabled=true)
+	  @Test(priority=12,enabled=false)
 	  public void TestCase_027_DailyReportPDF() throws InterruptedException {
 		  
 		

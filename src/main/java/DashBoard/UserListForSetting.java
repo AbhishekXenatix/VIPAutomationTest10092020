@@ -43,7 +43,7 @@ public class UserListForSetting extends TestBase{
 		driver.findElement(By.xpath("//*[@id=\"genDetail_LOCKED\"]/option[3]")).click();Helper.staticWait(2000);
 		
 		driver.findElement(By.id("genDetail_USER_GROUP")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"genDetail_USER_GROUP\"]/option[2]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"genDetail_USER_GROUP\"]/option[3]")).click();Helper.staticWait(2000);
 		
 		
 		 WebElement tradingname = driver.findElement(By.id("genDetail_SHOP_ID"));
@@ -100,17 +100,7 @@ public void CreateUserListforInternal() {
 
 
 
-public void deleteall() {
-	
-	//terminal delete
-	
-	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
-	driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("5F00000604");;Helper.staticWait(2000);
-	driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(2000);
-	driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(2000);
-	 ExtentTestManager.getTest().log(Status.INFO,  "***********Delete from Terminal ");
-	
-}
+
 	
 	
 	

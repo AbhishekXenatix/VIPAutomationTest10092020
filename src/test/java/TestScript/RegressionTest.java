@@ -30,7 +30,7 @@ public class RegressionTest extends TestBase{
 	
 	
 	@Test(priority=1,enabled=true ) 
-	public void TestCase_001_Click_Shop_menu() throws InterruptedException  {
+	public void TestCase_001_Click_Shop_Group_Management() throws InterruptedException  {
 		 
 		
 		  shopgroupm.Createshop();
@@ -40,14 +40,14 @@ public class RegressionTest extends TestBase{
 	  }
 	
 	@Test(priority=2,enabled=true ) 
-	public void TestCase_002_Shop_menu_DownloadPDF() throws InterruptedException  {
+	public void TestCase_002_Shop_Group_Management_DownloadPDF() throws InterruptedException  {
 		 
 		  shopgroupm. GroupDownloadPDF();
 		 
 	  }
 	
 	@Test(priority=3,enabled=true ) 
-	public void TestCase_003_Shop_menu_DownloadExcel() throws InterruptedException  {
+	public void TestCase_003_Shop_Group_Management_DownloadExcel() throws InterruptedException  {
 		 
 		
 		  shopgroupm.GroupDownloadExcel();
@@ -55,7 +55,7 @@ public class RegressionTest extends TestBase{
 	
 
 	@Test(priority=4,enabled=true ) 
-	public void TestCase_004_Shop_menu_Verifym() throws InterruptedException  {
+	public void TestCase_004_Shop_List_Verify_TradingName01() throws InterruptedException  {
 		 
 		ml.VerifyshopMerchantNameM();
 	
@@ -65,7 +65,7 @@ public class RegressionTest extends TestBase{
 	
 
 	@Test(priority=5,enabled=true ) 
-	public void TestCase_005_Shop_menu_Verifys() throws InterruptedException  {
+	public void TestCase_005_Shop_List_Verify_TradingName02() throws InterruptedException  {
 		 
 		
 		ml.VerifyshopMerchantNameS();
@@ -117,7 +117,7 @@ public class RegressionTest extends TestBase{
 	  
 	  
 	  @Test(priority=9,enabled=true)
-		  public void TestCase_009_shopAdvSearch() {
+		  public void TestCase_009_shopListAdvSearch() {
 			  
 			  ml.ShopListAdvancedSearch();
 			  
@@ -125,7 +125,7 @@ public class RegressionTest extends TestBase{
 	  
 	  
 	  @Test(priority=10,enabled=true)
-	  public void TestCase_010_shop_DownloadPDF() {
+	  public void TestCase_010_shop_List_DownloadPDF() {
 		  
 	      ml.ShopDownloadPDF();
 	   
@@ -134,7 +134,7 @@ public class RegressionTest extends TestBase{
 	  
 	  
 	  @Test(priority=11,enabled=true)
-	  public void TestCase_011_shop_DownloadExcel() {
+	  public void TestCase_011_shop_List_DownloadExcel() {
 		  
 	      ml.ShopDownloadExcel();
 		  

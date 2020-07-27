@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="22.512" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="791.995" tests="31" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\abhishek.g\AppData\Local\Temp\surefire2913254606713498709\surefirebooter2205719755186365031.jar C:\Users\abhishek.g\AppData\Local\Temp\surefire2913254606713498709 2020-07-27T15-51-45_927-jvmRun1 surefire6833720192758557024tmp surefire_08657333548158612215tmp"/>
+    <property name="sun.java.command" value="C:\Users\abhishek.g\AppData\Local\Temp\surefire3021572183294338790\surefirebooter5449001981929240988.jar C:\Users\abhishek.g\AppData\Local\Temp\surefire3021572183294338790 2020-07-27T16-01-19_045-jvmRun1 surefire4054602067819663900tmp surefire_01375452920358520436tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\abhishek.g\eclipse-workspace\VIPSystemSCLAutomation\target\test-classes;C:\Users\abhishek.g\eclipse-workspace\VIPSystemSCLAutomation\target\classes;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\abhishek.g\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\abhishek.g\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\abhishek.g\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\abhishek.g\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\abhishek.g\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\abhishek.g\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\abhishek.g\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\abhishek.g\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\abhishek.g\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\abhishek.g\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\abhishek.g\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\abhishek.g\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\abhishek.g\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\abhishek.g\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\abhishek.g\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\abhishek.g\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\abhishek.g\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\abhishek.g\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\abhishek.g\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\abhishek.g\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\abhishek.g\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\abhishek.g\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\poi-scratchpad\3.9\poi-scratchpad-3.9.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\ooxml-schemas\1.1\ooxml-schemas-1.1.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\openxml4j\1.0-beta\openxml4j-1.0-beta.jar;C:\Users\abhishek.g\.m2\repository\log4j\log4j\1.2.8\log4j-1.2.8.jar;C:\Users\abhishek.g\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\abhishek.g\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\abhishek.g\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.1\log4j-api-2.13.1.jar;C:\Users\abhishek.g\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.1\log4j-core-2.13.1.jar;C:\Users\abhishek.g\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\abhishek.g\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\abhishek.g\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\abhishek.g\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\abhishek.g\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\abhishek.g\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\abhishek.g\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\abhishek.g\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\abhishek.g\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\abhishek.g\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\abhishek.g\.m2\repository\com\aventstack\extentreports-testng-adapter\1.0.7\extentreports-testng-adapter-1.0.7.jar;C:\Users\abhishek.g\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\abhishek.g"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\abhishek.g\AppData\Local\Temp\surefire2913254606713498709\surefirebooter2205719755186365031.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\abhishek.g\AppData\Local\Temp\surefire3021572183294338790\surefirebooter5449001981929240988.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,21 +61,943 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="TestCase_001_Click_Shop_menu" classname="TestScript.RegressionTest" time="14.038">
-    <system-out><![CDATA[Mon Jul 27 15:51:48 CST 2020
+  <testcase name="TestCase_001_Click_Shop_menu" classname="TestScript.RegressionTest" time="40.091">
+    <system-out><![CDATA[Mon Jul 27 16:01:20 CST 2020
 https://vips.spectratech.com:8443/index.php
 SpectraTech - WebApp Login
-15:51:55.531 [main] INFO  DashBoard.ShopGroupManagement - Create Shop Group ..
-
-Already have MOKO group..
+16:01:27.258 [main] INFO  DashBoard.ShopGroupManagement - Create Shop Group ..
+No data available in table
+Create a new group
+Shop Group is created ..
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 40760
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 7878
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1595836309.895][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
-Jul 27, 2020 3:51:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1595836882.016][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 27, 2020 4:01:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
+  </testcase>
+  <testcase name="TestCase_002_Shop_menu_DownloadPDF" classname="TestScript.RegressionTest" time="9.661">
+    <system-out><![CDATA[Group PDF downloaded..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_003_Shop_menu_DownloadExcel" classname="TestScript.RegressionTest" time="9.478">
+    <system-out><![CDATA[Group Excel downloaded..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_004_Shop_menu_Verifym" classname="TestScript.RegressionTest" time="43.469">
+    <system-out><![CDATA[
+Please delete Manning shop
+dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_005_Shop_menu_Verifys" classname="TestScript.RegressionTest" time="9.662">
+    <system-out><![CDATA[No matching records found
+Create a new Shop
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_006_Create_Shop_list[0101222222, Mannings, Mong, A111, GHD222, ANM1, Thanks, HK, F-23, Wan Chi, Wai, Account, 547754747, a@gmail.com, G1, 3, 2, 2, ABC, 1, 1, thanks for Shopping, Thanks, Sale, Good Day, One, No](1)" classname="TestScript.RegressionTest" time="91.855">
+    <system-out><![CDATA[dropdown values are Please Select
+dropdown values are 2 HOTELS F&B & RETAILS OUTLET (INCLUDING VOL)
+dropdown values are CONRAD HOTEL CONCIERGE
+dropdown values are HOLIDAY INN CONCIERGE
+dropdown values are SANDS - ENTERTAINMENT
+dropdown values are SANDS - F&B
+dropdown values are SANDS - HOTEL
+dropdown values are SANDS - MISCELLANEOUS
+dropdown values are SANDS - RETAIL
+dropdown values are SID
+dropdown values are SPECTRA - Sample Merchant
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are Test merchant
+dropdown values are test spectra MIS
+dropdown values are test2
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VENETIAN - F&B
+dropdown values are VENETIAN - HOTEL
+dropdown values are VENETIAN - MISCELLANEOUS
+dropdown values are VENETIAN - OTHERS
+dropdown values are VENETIAN - RETAIL
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_006_Create_Shop_list[0202333333, Seven11, Kong, A121, GHD333, ANM2, Thanks, HK, F-21, NP, Man, IT, 34636636, a@gmail.com, G2, 4, 5, 4, DEF, 3, 3, Welcome Back, Thanks, Sale, Good Day, Two, Yes](2)" classname="TestScript.RegressionTest" time="91.856">
+    <system-out><![CDATA[dropdown values are Please Select
+dropdown values are 2 HOTELS F&B & RETAILS OUTLET (INCLUDING VOL)
+dropdown values are CONRAD HOTEL CONCIERGE
+dropdown values are HOLIDAY INN CONCIERGE
+dropdown values are SANDS - ENTERTAINMENT
+dropdown values are SANDS - F&B
+dropdown values are SANDS - HOTEL
+dropdown values are SANDS - MISCELLANEOUS
+dropdown values are SANDS - RETAIL
+dropdown values are SID
+dropdown values are SPECTRA - Sample Merchant
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are Test merchant
+dropdown values are test spectra MIS
+dropdown values are test2
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VENETIAN - F&B
+dropdown values are VENETIAN - HOTEL
+dropdown values are VENETIAN - MISCELLANEOUS
+dropdown values are VENETIAN - OTHERS
+dropdown values are VENETIAN - RETAIL
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_006_PointSchemeShopList" classname="TestScript.RegressionTest" time="41.401">
+    <system-out><![CDATA[Create Point Scheme from shop list
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_009_shopAdvSearch" classname="TestScript.RegressionTest" time="30.306">
+    <system-out><![CDATA[click on new Item from shop list
+dropdown values are Please Select
+dropdown values are ^%^@#@!@#%0000000000000000000000000000000000000000
+dropdown values are 321
+dropdown values are AG1asdvc
+dropdown values are Cotai Service (Cotai Jet)
+dropdown values are Entertainment Ticketing
+dropdown values are F&B
+dropdown values are helloworld
+dropdown values are Hotel (Conrad)
+dropdown values are Hotel (Holiday Inn)
+dropdown values are Hotel (Venetian & Sands)
+dropdown values are IE Spectra SQA
+dropdown values are MICE
+dropdown values are MOKO
+dropdown values are Non-VML Retail Store
+dropdown values are Spectra MIS
+dropdown values are Spectra QA
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are tsdf23
+dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are Seven11
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+dropdown values are Please Select
+dropdown values are 2 HOTELS F&B & RETAILS OUTLET (INCLUDING VOL)
+dropdown values are CONRAD HOTEL CONCIERGE
+dropdown values are HOLIDAY INN CONCIERGE
+dropdown values are SANDS - ENTERTAINMENT
+dropdown values are SANDS - F&B
+dropdown values are SANDS - HOTEL
+dropdown values are SANDS - MISCELLANEOUS
+dropdown values are SANDS - RETAIL
+dropdown values are SID
+dropdown values are SPECTRA - Sample Merchant
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are Test merchant
+dropdown values are test spectra MIS
+dropdown values are test2
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VENETIAN - F&B
+dropdown values are VENETIAN - HOTEL
+dropdown values are VENETIAN - MISCELLANEOUS
+dropdown values are VENETIAN - OTHERS
+dropdown values are VENETIAN - RETAIL
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_010_shop_DownloadPDF" classname="TestScript.RegressionTest" time="7.012"/>
+  <testcase name="TestCase_011_shop_DownloadExcel" classname="TestScript.RegressionTest" time="6.521"/>
+  <testcase name="TestCase_012_Terminal" classname="TestScript.RegressionTestTwo" time="22.437">
+    <system-out><![CDATA[https://vips.spectratech.com:8443/index.php
+SpectraTech - WebApp Login
+Create a Terminal..
+dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are Seven11
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 29378
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1595837270.297][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 27, 2020 4:07:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestCase_013_TerminalSearch" classname="TestScript.RegressionTestTwo" time="24.331">
+    <system-out><![CDATA[Advanced search start for Terminal..
+dropdown values are Please Select
+dropdown values are 2 HOTELS F&B & RETAILS OUTLET (INCLUDING VOL)
+dropdown values are CONRAD HOTEL CONCIERGE
+dropdown values are HOLIDAY INN CONCIERGE
+dropdown values are SANDS - ENTERTAINMENT
+dropdown values are SANDS - F&B
+dropdown values are SANDS - HOTEL
+dropdown values are SANDS - MISCELLANEOUS
+dropdown values are SANDS - RETAIL
+dropdown values are SID
+dropdown values are SPECTRA - Sample Merchant
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are Test merchant
+dropdown values are test spectra MIS
+dropdown values are test2
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VENETIAN - F&B
+dropdown values are VENETIAN - HOTEL
+dropdown values are VENETIAN - MISCELLANEOUS
+dropdown values are VENETIAN - OTHERS
+dropdown values are VENETIAN - RETAIL
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_014_TerminalDownloadPDF" classname="TestScript.RegressionTestTwo" time="7.152"/>
+  <testcase name="TestCase_015_TerminalDownloadExcel" classname="TestScript.RegressionTestTwo" time="6.441"/>
+  <testcase name="TestCase_016_UserGroupPermission_Internal" classname="TestScript.RegressionTestThree" time="21.882">
+    <system-out><![CDATA[https://vips.spectratech.com:8443/index.php
+SpectraTech - WebApp Login
+Create Internal User Group..
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 35653
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1595837337.086][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 27, 2020 4:08:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestCase_017_UserGroupPermission_Merchant" classname="TestScript.RegressionTestThree" time="21.895">
+    <system-out><![CDATA[Create Merchant User Group..
+click on setting menu..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_018_UserListForSetting_CreateMerchant" classname="TestScript.RegressionTestThree" time="37.016">
+    <system-out><![CDATA[Create user list for Merchant..
+dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are Seven11
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_019_UserListForSetting_CreateInternal" classname="TestScript.RegressionTestThree" time="24.285">
+    <system-out><![CDATA[Create user list for Internal..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_020_Transactions" classname="TestScript.RegressionTestThree" time="41.386">
+    <system-out><![CDATA[Advanced Search for Transactions..
+dropdown values are Please Select
+dropdown values are [Sales Trans. Type]
+dropdown values are Sales
+dropdown values are Void Sale
+dropdown values are Sales Reversal
+dropdown values are Void Sale Reversal
+dropdown values are [Balance Enquiry]
+dropdown values are [Settlement Type]
+dropdown values are Upload Transaction
+dropdown values are [Parameter Type]
+dropdown values are Parameter Download
+dropdown values are Terminal Sync.
+dropdown values are Please Select
+dropdown values are DIAMOND
+dropdown values are GOLD
+dropdown values are GREY
+dropdown values are JUNKET SAPPHIRE
+dropdown values are PLATINUM
+dropdown values are RUBY
+dropdown values are silver
+dropdown values are SUPER1
+dropdown values are tertet
+dropdown values are twetw
+27
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_021_TransactionsDownloadPDF" classname="TestScript.RegressionTestThree" time="3.683">
+    <system-out><![CDATA[PDF downloaded for Transactions..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_022_TransactionsDownloadExcel" classname="TestScript.RegressionTestThree" time="3.138">
+    <system-out><![CDATA[Excel downloaded for Transactions..
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_023_MonthlyReport" classname="TestScript.RegressionTestThree" time="21.472">
+    <system-out><![CDATA[Create a Monthly Report..
+dropdown values are ^%^@#@!@#%0000000000000000000000000000000000000000
+dropdown values are 321
+dropdown values are AG1asdvc
+dropdown values are Cotai Service (Cotai Jet)
+dropdown values are Entertainment Ticketing
+dropdown values are F&B
+dropdown values are helloworld
+dropdown values are Hotel (Conrad)
+dropdown values are Hotel (Holiday Inn)
+dropdown values are Hotel (Venetian & Sands)
+dropdown values are IE Spectra SQA
+dropdown values are MICE
+dropdown values are MOKO
+dropdown values are Non-VML Retail Store
+dropdown values are Spectra MIS
+dropdown values are Spectra QA
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are tsdf23
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_024_MonthlyReportPDF" classname="TestScript.RegressionTestThree" time="13.208"/>
+  <testcase name="TestCase_025_MonthlyReportExcel" classname="TestScript.RegressionTestThree" time="6">
+    <failure message="Failed to download Expected document expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to download Expected document expected [true] but found [false]
+	at TestScript.RegressionTestThree.TestCase_025_MonthlyReportExcel(RegressionTestThree.java:113)
+]]></failure>
+    <system-out><![CDATA[Destination isC:\Users\abhishek.g\eclipse-workspace\VIPSystemSCLAutomation\test-output\Screenshots\TestCase_025_MonthlyReportExcel20200727041215.png
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_026_DailyReport" classname="TestScript.RegressionTestThree" time="26.486">
+    <system-out><![CDATA[Create a Daily Report..
+Create a Daily Report and Based on Shop Group filter..
+dropdown values are ^%^@#@!@#%0000000000000000000000000000000000000000
+dropdown values are 321
+dropdown values are AG1asdvc
+dropdown values are Cotai Service (Cotai Jet)
+dropdown values are Entertainment Ticketing
+dropdown values are F&B
+dropdown values are helloworld
+dropdown values are Hotel (Conrad)
+dropdown values are Hotel (Holiday Inn)
+dropdown values are Hotel (Venetian & Sands)
+dropdown values are IE Spectra SQA
+dropdown values are MICE
+dropdown values are MOKO
+dropdown values are Non-VML Retail Store
+dropdown values are Spectra MIS
+dropdown values are Spectra QA
+dropdown values are Spectra SQA
+dropdown values are test
+dropdown values are tsdf23
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_027_DailyReportPDF" classname="TestScript.RegressionTestThree" time="15.441"/>
+  <testcase name="TestCase_028_DailyReportExcel" classname="TestScript.RegressionTestThree" time="2.174"/>
+  <testcase name="TestCase_030_ShopGroupDelete" classname="TestScript.RegressionTestThree" time="21.933"/>
+  <testcase name="TestCase_031_ShopListDelete" classname="TestScript.RegressionTestThree" time="67.28">
+    <system-out><![CDATA[dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are Seven11
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+dropdown values are Please Select
+dropdown values are 11111
+dropdown values are 88 - North
+dropdown values are 88 - South
+dropdown values are 88 - West
+dropdown values are 888 Las Vegas Buffet - Sands
+dropdown values are BAMBU
+dropdown values are Banquet - Sands
+dropdown values are BAR AZUL
+dropdown values are BAR FLORIAN
+dropdown values are BELINA BAR
+dropdown values are BOUTIQUE G
+dropdown values are BOUTIQUE V
+dropdown values are CANTON
+dropdown values are Casino Floor - Four Season
+dropdown values are Casino Floor - Venetian
+dropdown values are COMO POOLSIDE CAFE'
+dropdown values are Conrad Lobby Lounge
+dropdown values are Do Mar
+dropdown values are Dynasty 8
+dropdown values are EMPOIRO
+dropdown values are EXPO
+dropdown values are Food Court - Sands
+dropdown values are FOUR SEASONS DIPLOMAT
+dropdown values are Golden Court - Sands
+dropdown values are Grand Orbit
+dropdown values are Health Spa - Sands
+dropdown values are Health Spa Kiosk - Sands
+dropdown values are Holiday Inn Lobby Lounge
+dropdown values are Ice World Kiosk
+dropdown values are IE Spectra shop
+dropdown values are ILLY CAFE
+dropdown values are IMPER HOUSE SIM SUM
+dropdown values are IN SUITE DINING
+dropdown values are In-suite Bar - Venetian
+dropdown values are In-suite Dining - Sands
+dropdown values are Limo Service - Sands
+dropdown values are Lucky Express
+dropdown values are MAIN LOBBY
+dropdown values are MANCHESTER UNITED
+dropdown values are Mannings
+dropdown values are Minibar Sands Tower - Sands
+dropdown values are Moonlight Food Mkt - Sands
+dropdown values are New shop
+dropdown values are North
+dropdown values are NORTH
+dropdown values are PAIZA BAR
+dropdown values are Paiza Club - C1 - Sands
+dropdown values are Paiza Club - Guest - Sands
+dropdown values are Paiza Club - L3 - Sands
+dropdown values are PAIZA DINING
+dropdown values are PING
+dropdown values are Pool/Cabana - Venetian
+dropdown values are PORTOFINO
+dropdown values are QUBE
+dropdown values are RECREATION
+dropdown values are RED DRAGON
+dropdown values are Retail - Venetian
+dropdown values are Rice Empire
+dropdown values are Room Service - Sands
+dropdown values are Ruby Room - Sands
+dropdown values are Salon - Sands
+dropdown values are SAN LUCA KIOSK
+dropdown values are Sands Hotel - Sands
+dropdown values are Sands Macau Hotel - Sands
+dropdown values are Sands Theatre - Sands
+dropdown values are SDHFL1
+dropdown values are Seven11
+dropdown values are SHOP 2
+dropdown values are SHOP 4
+dropdown values are SHOP 7**
+dropdown values are Southern Kitchen
+dropdown values are Spa - Sands
+dropdown values are Spa - Venetian
+dropdown values are Spectra
+dropdown values are Spectra QA Shop
+dropdown values are Spectra QA Shop 1
+dropdown values are Spectra QA Shop 2
+dropdown values are SPECTRA Sample Shop
+dropdown values are SpectraMIS shop1
+dropdown values are Steakhouse - Sands
+dropdown values are test
+dropdown values are testrt123
+dropdown values are Transportation - Venetian
+dropdown values are Upload - Conrad
+dropdown values are Upload - Cotai Jet Ticketing
+dropdown values are Upload - Entertainment Ticketing
+dropdown values are Upload - Holiday Inn
+dropdown values are Upload - Hotel
+dropdown values are Upload - Parisian
+dropdown values are Upload - Sands
+dropdown values are Upload - Venetian
+dropdown values are VTL Ticketing - Sands
+dropdown values are vytes888
+dropdown values are Welcome
+dropdown values are WEST LOBBY
+dropdown values are Winner Circle Bar - Sands
+dropdown values are Xanadu - Sands
+dropdown values are Yum Cha
+]]></system-out>
+  </testcase>
+  <testcase name="TestCase_032_DeleteOthers" classname="TestScript.RegressionTestThree" time="1.489">
+    <failure message="element click intercepted: Element &lt;a href=&quot;terminalList.php&quot; class=&quot;mm-listitem__text&quot;&gt;...&lt;/a&gt; is not clickable at point (171, 286). Other element would receive the click: &lt;div id=&quot;jBox1-overlay&quot; class=&quot;jBox-overlay jBox-overlay-Modal&quot; style=&quot;display: block; opacity: 0.320816; z-index: 9999;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=84.0.4147.89)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SPHKRD05&apos;, ip: &apos;10.1.6.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:63243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 299d97391825e1677103aea6626fe4a8" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="terminalList.php" class="mm-listitem__text">...</a> is not clickable at point (171, 286). Other element would receive the click: <div id="jBox1-overlay" class="jBox-overlay jBox-overlay-Modal" style="display: block; opacity: 0.320816; z-index: 9999;"></div>
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:63243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 299d97391825e1677103aea6626fe4a8
+	at TestScript.RegressionTestThree.TestCase_032_DeleteOthers(RegressionTestThree.java:173)
+]]></failure>
+    <system-out><![CDATA[Destination isC:\Users\abhishek.g\eclipse-workspace\VIPSystemSCLAutomation\test-output\Screenshots\TestCase_032_DeleteOthers20200727041430.png
+]]></system-out>
   </testcase>
 </testsuite>

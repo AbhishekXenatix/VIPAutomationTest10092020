@@ -17,7 +17,7 @@ public class RegressionTestTwo extends TestBase{
 	
   @Test(priority=01,enabled=true ) 
 	  
-	  public void TestCase_012_Terminal() throws InterruptedException  {
+	  public void TestCase_012_CreateTerminal() throws InterruptedException  {
 	  
 		  terminal.CreatTerminal();
 

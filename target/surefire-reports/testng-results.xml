@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21654" started-at="2020-07-27T15:30:27 CST" finished-at="2020-07-27T15:30:49 CST">
+  <suite name="Suite" duration-ms="21535" started-at="2020-07-27T15:51:48 CST" finished-at="2020-07-27T15:52:09 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21654" started-at="2020-07-27T15:30:27 CST" finished-at="2020-07-27T15:30:49 CST">
+    <test name="Test" duration-ms="21535" started-at="2020-07-27T15:51:48 CST" finished-at="2020-07-27T15:52:09 CST">
       <class name="TestScript.RegressionTest">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="BaseCar" is-config="true" duration-ms="7487" started-at="2020-07-27T15:30:27 CST" finished-at="2020-07-27T15:30:35 CST">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="BaseCar" is-config="true" duration-ms="7365" started-at="2020-07-27T15:51:48 CST" finished-at="2020-07-27T15:51:55 CST">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="PASS" signature="TestCase_001_Click_Shop_menu()[pri:1, instance:TestScript.RegressionTest@d35dea7]" name="TestCase_001_Click_Shop_menu" duration-ms="14061" started-at="2020-07-27T15:30:35 CST" finished-at="2020-07-27T15:30:49 CST">
+        <test-method status="PASS" signature="TestCase_001_Click_Shop_menu()[pri:1, instance:TestScript.RegressionTest@d35dea7]" name="TestCase_001_Click_Shop_menu" duration-ms="14068" started-at="2020-07-27T15:51:55 CST" finished-at="2020-07-27T15:52:09 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_001_Click_Shop_menu -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="teardown" is-config="true" duration-ms="1" started-at="2020-07-27T15:30:49 CST" finished-at="2020-07-27T15:30:49 CST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-27T15:52:09 CST" finished-at="2020-07-27T15:52:09 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

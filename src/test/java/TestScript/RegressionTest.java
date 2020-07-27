@@ -39,14 +39,14 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	
-	@Test(priority=2,enabled=false ) 
+	@Test(priority=2,enabled=true ) 
 	public void TestCase_002_Shop_menu_DownloadPDF() throws InterruptedException  {
 		 
 		  shopgroupm. GroupDownloadPDF();
 		 
 	  }
 	
-	@Test(priority=3,enabled=false ) 
+	@Test(priority=3,enabled=true ) 
 	public void TestCase_003_Shop_menu_DownloadExcel() throws InterruptedException  {
 		 
 		
@@ -54,7 +54,7 @@ public class RegressionTest extends TestBase{
 	  }
 	
 
-	@Test(priority=4,enabled=false ) 
+	@Test(priority=4,enabled=true ) 
 	public void TestCase_004_Shop_menu_Verifym() throws InterruptedException  {
 		 
 		ml.VerifyshopMerchantNameM();
@@ -64,7 +64,7 @@ public class RegressionTest extends TestBase{
 	
 	
 
-	@Test(priority=5,enabled=false ) 
+	@Test(priority=5,enabled=true ) 
 	public void TestCase_005_Shop_menu_Verifys() throws InterruptedException  {
 		 
 		
@@ -79,7 +79,7 @@ public class RegressionTest extends TestBase{
 		  return data;
 	  }
 	  
-	  @Test(priority=6, enabled=false,dataProvider = "getContactsTestData")
+	  @Test(priority=6, enabled=true,dataProvider = "getContactsTestData")
 	  public void TestCase_006_Create_Shop_list(String sid, String tradingname, String rcenter, String propertyid ,String shopid,String grantid,
 				String description,String mailingaddress1,String mailingaddress2,String mailingaddress3,String contactperson,String jobtitle
 				,String phonenumber,String emailaddress,String vendorcode,String contractno,String chargeonearn,String chargonburn ,String companyname
@@ -96,7 +96,7 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	  
-	  @Test(priority=7, enabled=false)
+	  @Test(priority=7, enabled=true)
 	  public void TestCase_006_PointSchemeShopList() throws AWTException {
 		  
 		 
@@ -116,7 +116,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=9,enabled=false)
+	  @Test(priority=9,enabled=true)
 		  public void TestCase_009_shopAdvSearch() {
 			  
 			  ml.ShopListAdvancedSearch();
@@ -124,7 +124,7 @@ public class RegressionTest extends TestBase{
 		  }
 	  
 	  
-	  @Test(priority=10,enabled=false)
+	  @Test(priority=10,enabled=true)
 	  public void TestCase_010_shop_DownloadPDF() {
 		  
 	      ml.ShopDownloadPDF();
@@ -133,7 +133,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=11,enabled=false)
+	  @Test(priority=11,enabled=true)
 	  public void TestCase_011_shop_DownloadExcel() {
 		  
 	      ml.ShopDownloadExcel();

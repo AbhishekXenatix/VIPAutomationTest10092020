@@ -97,7 +97,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  @Test(priority=7, enabled=true)
-	  public void TestCase_006_PointSchemeShopList() throws AWTException {
+	  public void TestCase_007_PointSchemeShopList() throws AWTException {
 		  
 		 
 		  ml.CreatePointScheme();

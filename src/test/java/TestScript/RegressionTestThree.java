@@ -107,7 +107,7 @@ public class RegressionTestThree  extends TestBase {
 	  
 	  
 	  
-	  @Test(priority=10,enabled=true)
+	  @Test(priority=10,enabled=false)
 	  public void TestCase_025_MonthlyReportExcel() {
 		  
 		  monthlyreport.ReportDownloadExcel();
@@ -135,7 +135,7 @@ public class RegressionTestThree  extends TestBase {
 	  
 	  
 	  
-	  @Test(priority=13,enabled=true)
+	  @Test(priority=13,enabled=false)
 	  public void TestCase_028_DailyReportExcel() throws InterruptedException {
 		  
 		  

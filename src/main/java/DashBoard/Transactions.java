@@ -26,7 +26,7 @@ public class Transactions extends TestBase {
 		System.out.println("Advanced Search for Transactions..");
 		
 		//click on Transactions button from dashboard
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[5]/a")).click();Helper.staticWait(15000);
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[4]/a")).click();Helper.staticWait(15000);
 		
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
 		

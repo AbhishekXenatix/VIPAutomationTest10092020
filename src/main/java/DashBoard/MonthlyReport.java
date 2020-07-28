@@ -32,7 +32,7 @@ public class MonthlyReport extends TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[7]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[contains(text(),'Monthly Report')]")).click();Helper.staticWait(3000);
 		
 		

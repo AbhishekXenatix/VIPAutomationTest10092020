@@ -106,7 +106,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=8, enabled=false)
+	  @Test(priority=8, enabled=true)
 	  public void TestCase_008_PointSchemeUpdateShopList() throws AWTException {
 		  
 		 

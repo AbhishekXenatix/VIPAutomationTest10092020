@@ -243,7 +243,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
 		//shop group management 
 		driver.findElement(By.xpath("//*[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
 		
 		

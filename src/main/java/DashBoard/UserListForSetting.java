@@ -21,7 +21,7 @@ public class UserListForSetting extends TestBase{
 	public void CreateUserListforMerchant() {
 		
 		System.out.println("Create user list for Merchant..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();
 		//click user list
 		
 		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();
@@ -46,15 +46,21 @@ public class UserListForSetting extends TestBase{
 		driver.findElement(By.xpath("//*[@id=\"genDetail_USER_GROUP\"]/option[3]")).click();Helper.staticWait(2000);
 		
 		
-		 WebElement tradingname = driver.findElement(By.id("genDetail_SHOP_ID"));
-		 tradingname.click();Helper.staticWait(3000);
-	     	Select select = new Select(tradingname); 
-	     	
-			 List<WebElement> dropdowntradingname = select.getOptions();
-			 for(int i=0;i<dropdowntradingname.size();i++){
-				 String drop_down_tradingname = dropdowntradingname.get(i).getText();
-				 System.out.println("dropdown values are " + drop_down_tradingname);  }
-			         select.selectByVisibleText("Welcome");Helper.staticWait(3000);
+		/*
+		 * WebElement tradingname = driver.findElement(By.id("genDetail_SHOP_ID"));
+		 * tradingname.click();Helper.staticWait(3000); Select select = new
+		 * Select(tradingname);
+		 * 
+		 * List<WebElement> dropdowntradingname = select.getOptions(); for(int
+		 * i=0;i<dropdowntradingname.size();i++){ String drop_down_tradingname =
+		 * dropdowntradingname.get(i).getText();
+		 * System.out.println("dropdown values are " + drop_down_tradingname); }
+		 * select.selectByVisibleText("Welcome");Helper.staticWait(3000);
+		 */
+			         
+			         Select tradingname =  new Select (driver.findElement(By.id("genDetail_SHOP_ID")));
+			         tradingname.selectByVisibleText("Mannings");
+			         Helper.staticWait(3000);
 			         
 			         driver.findElement(By.id("sliderBtnSaveNew")).click();Helper.staticWait(5000);
 		
@@ -65,7 +71,7 @@ public class UserListForSetting extends TestBase{
 public void CreateUserListforInternal() {
 		
 		System.out.println("Create user list for Internal..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[9]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();Helper.staticWait(2000);
 		//click user list
 		
 		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();Helper.staticWait(2000);

@@ -77,8 +77,8 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "\\test-output\\Screenshots\\" + screenshotName + dateName
-				+ ".png";
+		//String destination = System.getProperty("user.dir") + "\\test-output\\Screenshots\\" + screenshotName + dateName + ".png";
+		String destination = System.getProperty("C:\\Users\\abhishek.g\\.jenkins\\workspace\\VIP Automation\\test-output\\Screenshots") + screenshotName + dateName + ".png";
 		System.out.println("Destination is" + destination);
 		File finalDestination = new File(destination);
 		try {

@@ -18,15 +18,13 @@ public class Jira_TestCasesPage extends TestBase{
 	public Jira_TestCasesPage(WebDriver driver) {}
 	
 	public void Test_VSM_218_Update_slip_header1negativevalues()  {
-		SoftAssert softAssert = new SoftAssert();
-		 String from = "1";
+	
+	
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		System.out.println("VSM_218 _Webportal -  Update slip Title, slip header1, slip header2 , slip footer detail on the shop creation/ shop detail updation form - negative values");
 		 
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[4]/a")).click();Helper.staticWait(10000);
 		
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
 		
 	
 	  }

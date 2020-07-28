@@ -38,7 +38,7 @@ public class MerchanList extends TestBase {
 	
 	
 	
-	public void ShopListcopy(String sid, String tradingname , String rcenter, String propertyid, String shopid, String grantid,
+	public void ShopListcopy(String tradingname , String rcenter, String propertyid, String shopid, String grantid,
 			String description,String mailingaddress1,String mailingaddress2,String mailingaddress3, String contactperson
 			,String jobtitle,String phonenumber,String emailaddress,String vendorcode,String contractno,String chargeonearn,String chargonburn ,String companyname
 			,String earnrate,String redeemrate ,String sliptitle,String slipheader1,String slipheader2,String slipfooter ,String comments ,String remarks) throws InterruptedException {
@@ -48,9 +48,10 @@ public class MerchanList extends TestBase {
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000); 
 		  
-		WebElement SID = driver.findElement(By.id("genDetail_SHOP_ID"));
-		//SID.clear();
-		SID.sendKeys(sid);Helper.staticWait(2000);
+			/*
+			 * WebElement SID = driver.findElement(By.id("genDetail_SHOP_ID"));
+			 * //SID.clear(); SID.sendKeys(sid);Helper.staticWait(2000);
+			 */
 		
 
 

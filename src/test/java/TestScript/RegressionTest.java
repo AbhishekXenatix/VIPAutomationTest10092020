@@ -25,7 +25,7 @@ public class RegressionTest extends TestBase{
 	MerchanList ml = new MerchanList((WebDriver) driver);
 	ShopGroupManagement shopgroupm = new ShopGroupManagement((WebDriver) driver);
 	
-	
+	Terminal terminal = new Terminal((WebDriver) driver);
 	
 	
 	
@@ -140,7 +140,49 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	  
+@Test(priority=12,enabled=true ) 
 	  
+	  public void TestCase_012_CreateTerminal() throws InterruptedException  {
+	  
+		  terminal.CreatTerminal();
+
+	  }
+	  
+	  
+       @Test(priority=13,enabled=true ) 
+	   public void TestCase_013_TerminalSearch() throws InterruptedException  {
+	  
+	   terminal.TerminalAdvancedSearch();
+	  
+	   }
+ 
+ 
+       @Test(priority=14,enabled=true ) 
+ 
+       public void TestCase_014_TerminalDownloadPDF() throws InterruptedException  {
+      
+        terminal.TerminalDownloadPDF();
+ 
+       }
+       
+       @Test(priority=15,enabled=true ) 
+       
+       public void TestCase_015_TerminalDownloadExcel() throws InterruptedException  {
+      
+        
+        terminal.TerminalDownloadExcel();
+ 
+       }
+       
+       
+       @Test(priority=16, enabled=false)
+ 	  public void TestCase_029_TerminalnotApollo() {
+ 		  
+ 		 terminal.createterminalnotapollo();
+ 		  
+ 		 
+ 	  }
+ 	  
 	
  
 	  

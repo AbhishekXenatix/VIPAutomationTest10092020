@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="15" total="16" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22458" started-at="2020-07-28T13:50:04 CST" finished-at="2020-07-28T13:50:27 CST">
+  <suite name="Suite" duration-ms="25881" started-at="2020-07-28T13:57:08 CST" finished-at="2020-07-28T13:57:34 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22458" started-at="2020-07-28T13:50:04 CST" finished-at="2020-07-28T13:50:27 CST">
+    <test name="Test" duration-ms="25881" started-at="2020-07-28T13:57:08 CST" finished-at="2020-07-28T13:57:34 CST">
       <class name="TestScript.RegressionTest">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="BaseCar" is-config="true" duration-ms="7875" started-at="2020-07-28T13:50:04 CST" finished-at="2020-07-28T13:50:12 CST">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="BaseCar" is-config="true" duration-ms="11150" started-at="2020-07-28T13:57:08 CST" finished-at="2020-07-28T13:57:19 CST">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="PASS" signature="TestCase_001_Click_Shop_Group_Management()[pri:1, instance:TestScript.RegressionTest@d35dea7]" name="TestCase_001_Click_Shop_Group_Management" duration-ms="14479" started-at="2020-07-28T13:50:12 CST" finished-at="2020-07-28T13:50:27 CST">
+        <test-method status="PASS" signature="TestCase_001_Click_Shop_Group_Management()[pri:1, instance:TestScript.RegressionTest@d35dea7]" name="TestCase_001_Click_Shop_Group_Management" duration-ms="14626" started-at="2020-07-28T13:57:19 CST" finished-at="2020-07-28T13:57:34 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_001_Click_Shop_Group_Management -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-28T13:50:27 CST" finished-at="2020-07-28T13:50:27 CST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@d35dea7]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-28T13:57:34 CST" finished-at="2020-07-28T13:57:34 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

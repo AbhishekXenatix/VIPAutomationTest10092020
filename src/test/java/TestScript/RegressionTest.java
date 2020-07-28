@@ -39,14 +39,14 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	
-	@Test(priority=2,enabled=false ) 
+	@Test(priority=2,enabled=true ) 
 	public void TestCase_002_Shop_Group_Management_DownloadPDF() throws InterruptedException  {
 		 
 		  shopgroupm. GroupDownloadPDF();
 		 
 	  }
 	
-	@Test(priority=3,enabled=false ) 
+	@Test(priority=3,enabled=true ) 
 	public void TestCase_003_Shop_Group_Management_DownloadExcel() throws InterruptedException  {
 		 
 		
@@ -54,7 +54,7 @@ public class RegressionTest extends TestBase{
 	  }
 	
 
-	@Test(priority=4,enabled=false ) 
+	@Test(priority=4,enabled=true ) 
 	public void TestCase_004_Shop_List_Verify_TradingName01() throws InterruptedException  {
 		 
 		ml.VerifyshopMerchantNameM();
@@ -64,7 +64,7 @@ public class RegressionTest extends TestBase{
 	
 	
 
-	@Test(priority=5,enabled=false ) 
+	@Test(priority=5,enabled=true ) 
 	public void TestCase_005_Shop_List_Verify_TradingName02() throws InterruptedException  {
 		 
 		
@@ -79,7 +79,7 @@ public class RegressionTest extends TestBase{
 		  return data;
 	  }
 	  
-	  @Test(priority=6, enabled=false,dataProvider = "getContactsTestData")
+	  @Test(priority=6, enabled=true,dataProvider = "getContactsTestData")
 	  public void TestCase_006_Create_Shop_list(String tradingname, String rcenter, String propertyid ,String shopid,String grantid,
 				String description,String mailingaddress1,String mailingaddress2,String mailingaddress3,String contactperson,String jobtitle
 				,String phonenumber,String emailaddress,String vendorcode,String contractno,String chargeonearn,String chargonburn ,String companyname
@@ -96,7 +96,7 @@ public class RegressionTest extends TestBase{
 		  
 	  }
 	  
-	  @Test(priority=7, enabled=false)
+	  @Test(priority=7, enabled=true)
 	  public void TestCase_007_PointSchemeShopList() throws AWTException {
 		  
 		 
@@ -116,7 +116,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=9,enabled=false)
+	  @Test(priority=9,enabled=true)
 		  public void TestCase_009_shopListAdvSearch() {
 			  
 			  ml.ShopListAdvancedSearch();
@@ -124,7 +124,7 @@ public class RegressionTest extends TestBase{
 		  }
 	  
 	  
-	  @Test(priority=10,enabled=false)
+	  @Test(priority=10,enabled=true)
 	  public void TestCase_010_shop_List_DownloadPDF() {
 		  
 	      ml.ShopDownloadPDF();
@@ -133,14 +133,14 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-	  @Test(priority=11,enabled=false)
+	  @Test(priority=11,enabled=true)
 	  public void TestCase_011_shop_List_DownloadExcel() {
 		  
 	      ml.ShopDownloadExcel();
 		  
 	  }
 	  
-@Test(priority=12,enabled=false ) 
+@Test(priority=12,enabled=true ) 
 	  
 	  public void TestCase_012_CreateTerminal() throws InterruptedException  {
 	  
@@ -149,7 +149,7 @@ public class RegressionTest extends TestBase{
 	  }
 	  
 	  
-       @Test(priority=13,enabled=false ) 
+       @Test(priority=13,enabled=true ) 
 	   public void TestCase_013_TerminalSearch() throws InterruptedException  {
 	  
 	   terminal.TerminalAdvancedSearch();
@@ -157,7 +157,7 @@ public class RegressionTest extends TestBase{
 	   }
  
  
-       @Test(priority=14,enabled=false ) 
+       @Test(priority=14,enabled=true ) 
  
        public void TestCase_014_TerminalDownloadPDF() throws InterruptedException  {
       
@@ -165,7 +165,7 @@ public class RegressionTest extends TestBase{
  
        }
        
-       @Test(priority=15,enabled=false ) 
+       @Test(priority=15,enabled=true ) 
        
        public void TestCase_015_TerminalDownloadExcel() throws InterruptedException  {
       
@@ -174,17 +174,7 @@ public class RegressionTest extends TestBase{
  
        }
        
-       
-       @Test(priority=16, enabled=false)
- 	  public void TestCase_029_TerminalnotApollo() {
- 		  
- 		 terminal.createterminalnotapollo();
- 		  
- 		 
- 	  }
- 	  
-	
- 
+     
 	  
 	 
 	  

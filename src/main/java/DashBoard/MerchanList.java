@@ -504,7 +504,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
-		driver.findElement(By.id("YESDele")).click();Helper.staticWait(3000);
+		driver.findElement(By.id("YESDele")).click();Helper.staticWait(5000);
 	}
 	
 	

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Util.ExtentTestListner"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="TestScript.RegressionTestThree">
+      <class name="TestScript.JiraTestCases">
         <methods>
-          <include name="TestCase_022_TransactionsDownloadExcel"/>
-          <include name="TestCase_021_TransactionsDownloadPDF"/>
+          <include name="TestCase_001_VSM_218_Update_slip_header1negativevalues"/>
           <include name="BaseCar"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- TestScript.RegressionTestThree -->
+      </class> <!-- TestScript.JiraTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

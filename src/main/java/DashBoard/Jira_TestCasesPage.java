@@ -28,48 +28,7 @@ public class Jira_TestCasesPage extends TestBase{
 		
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
 		
-		//transaction id 
-		WebElement  transid = driver.findElement(By.id("advSearch_txn_id"));
-		transid.sendKeys("!!!!!@@@@@");;Helper.staticWait(2000);
-		selectDatefrom(from);
-		selectDateto();
-		WebElement search  =  driver.findElement(By.id("advSearch_Search"));search.click();Helper.staticWait(5000);
-		
-		WebElement ames = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
-		ames.getText();
-		String emes = "No data available in table";
-		softAssert.assertEquals(emes, ames);
-		
-		
-		//Card no.
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
-		transid.clear();
-		WebElement cardno = driver.findElement(By.id("advSearch_card_no"));
-		cardno.sendKeys("!!!!!!!!");search.click();Helper.staticWait(5000);
-		softAssert.assertEquals(emes, ames);
-		
-		//Batch no.
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
-		transid.clear();cardno.clear();
-		WebElement batchno = driver.findElement(By.id("advSearch_batch_no"));
-		batchno.sendKeys("!!!!!!!!");search.click();Helper.staticWait(5000);
-		softAssert.assertEquals(emes, ames);
-		
-		
-		//trace no.
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
-		transid.clear();cardno.clear();batchno.clear();
-		WebElement traceno = driver.findElement(By.id("advSearch_trace_no"));
-		traceno.sendKeys("!!!!!!!!");search.click();Helper.staticWait(5000);
-		softAssert.assertEquals(emes, ames);
-		
-		
-		//refer trace
-		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(2000);
-		transid.clear();cardno.clear();batchno.clear();traceno.clear();
-		WebElement refertrace = driver.findElement(By.id("advSearch_refer_trace_no"));
-		refertrace.sendKeys("!!!!!!!!");search.click();Helper.staticWait(5000);
-		softAssert.assertEquals(emes, ames);
+	
 	  }
 	
 	public void selectDatefrom(String date) {

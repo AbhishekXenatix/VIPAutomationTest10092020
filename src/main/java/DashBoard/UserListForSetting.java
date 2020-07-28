@@ -54,7 +54,7 @@ public class UserListForSetting extends TestBase{
 			 for(int i=0;i<dropdowntradingname.size();i++){
 				 String drop_down_tradingname = dropdowntradingname.get(i).getText();
 				 System.out.println("dropdown values are " + drop_down_tradingname);  }
-			         select.selectByVisibleText("SPECTRA Sample Shop");Helper.staticWait(3000);
+			         select.selectByVisibleText("Welcome");Helper.staticWait(3000);
 			         
 			         driver.findElement(By.id("sliderBtnSaveNew")).click();Helper.staticWait(5000);
 		

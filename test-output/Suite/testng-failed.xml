@@ -6,7 +6,7 @@
     <classes>
       <class name="TestScript.RegressionTest">
         <methods>
-          <include name="TestCase_012_CreateTerminal"/>
+          <include name="TestCase_008_PointSchemeUpdateShopList"/>
           <include name="BaseCar"/>
           <include name="teardown"/>
         </methods>

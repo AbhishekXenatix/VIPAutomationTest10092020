@@ -320,24 +320,37 @@ public class MerchanList extends TestBase {
 		
 		//click on new item button
 		//driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("Mannings");Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("Welcome");Helper.staticWait(2000);
+		
+		WebElement elesid = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[2]"));
+		//elesid.click();
+		String ssid = elesid.getText();
+		System.out.println("SID Number is : " + ssid);
+		Helper.staticWait(2000);
+		
+		//click selected row
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(2000);
-		driver.findElement(By.id("table_main")).click();Helper.staticWait(2000);
+		driver.findElement(By.id("table_main")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"slider_1\"]/div/div[2]/div[2]/div[2]/div[2]")).click();Helper.staticWait(2000);
 		
-		driver.findElement(By.xpath("//*[@id=\"slider_1\"]/div/div[2]/div[2]/div[2]/div[2]"));Helper.staticWait(2000);
-		
-		
+		driver.findElement(By.xpath("//*[@id=\"table_block\"]/tbody/tr")).click();Helper.staticWait(2000);
 		
 
-		 
+	
+		WebElement  SID = driver.findElement(By.xpath("//*[@id=\"table_block\"]/tbody/tr/td[1]"));
+		String sid = SID.getText();System.out.println("Point Scheme SID Number is : " + sid);Helper.staticWait(2000);
 		
-		driver.findElement(By.xpath("//td[contains(text(),'178')]")).click();Helper.staticWait(2000);
+		if(((SID).getText().equalsIgnoreCase(ssid))) {
+		
 		driver.findElement(By.xpath("//*[@id=\"table_block_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(2000);
 		
 		WebElement ER = driver.findElement(By.id("DTE_Field_EARN_RATE"));ER.clear();ER.sendKeys("2");Helper.staticWait(2000);
 		WebElement CE = driver.findElement(By.id("DTE_Field_CHARGE_ON_EARN"));CE.clear();CE.sendKeys("3");Helper.staticWait(2000);
-		WebElement CB = driver.findElement(By.id("DTE_Field_CHARGE_ON_BURN"));CB.clear();CB.sendKeys("4");CB.sendKeys(Keys.ENTER);CB.sendKeys(Keys.ESCAPE);Helper.staticWait(5000);
+		WebElement CB = driver.findElement(By.id("DTE_Field_CHARGE_ON_BURN"));CB.clear();CB.sendKeys("4");CB.sendKeys(Keys.ENTER);CB.sendKeys(Keys.ESCAPE);Helper.staticWait(5000);}
 		//driver.findElement(By.xpath("//button[@class='btn']")).click();
+		else {
+			System.out.println("Please check Point update scheme");
+		}
 		
 		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(5000);
 

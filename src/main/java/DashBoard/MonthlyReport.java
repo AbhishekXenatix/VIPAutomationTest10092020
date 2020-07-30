@@ -76,14 +76,14 @@ public class MonthlyReport extends TestBase {
 		         
 		         Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
 		         card.selectByVisibleText("GOLD");
-		         card.selectByIndex(8);Helper.staticWait(3000);
+		          Helper.staticWait(3000);
 			 
 		         
 		         
 		         
 		
 		
-		driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/div/div/div[2]/div/button")).click();Helper.staticWait(5000);
+		driver.findElement(By.xpath("//button[@class='btn btn-primary float-right reportsubmit']")).click();Helper.staticWait(5000);
 		
 		
 		

@@ -14,9 +14,12 @@
 <!--    <parameter name="BrowserName" value="Edge"></parameter> -->
   
   <classes>
-<class name="TestScript.RegressionTest"></class>  
-<!-- <class name="TestScript.RegressionTestThree"></class> -->
+
+<!-- <class name="TestScript.RegressionTest"></class>   -->
+<class name="TestScript.RegressionTestThree"></class>
 <!-- <class name="TestScript.JiraTestCases"></class> -->
+
+
 
   </classes>
   

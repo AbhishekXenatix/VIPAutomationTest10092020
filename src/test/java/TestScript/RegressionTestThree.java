@@ -171,6 +171,19 @@ public class RegressionTestThree  extends TestBase {
 	  public void TestCase_032_DeleteOthers() {
 		  
 		  terminal.deleteall();
+		 
+	  }
+	  
+	  
+	  
+	  @Test(priority=16, enabled=false)
+	  public void TestCase_033_DeleteSetting() {
+		  
+		  
+		 // UGP.DeleteusergrouppermissionMerchant();
+		 // UGP.DeleteusergrouppermissionInternal();
+		  ULFS.DeleteuserListMerchant();
+		  ULFS.DeleteuserListInternal();
 	  }
 	  
 

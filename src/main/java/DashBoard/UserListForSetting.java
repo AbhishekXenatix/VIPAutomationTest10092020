@@ -104,6 +104,48 @@ public void CreateUserListforInternal() {
 
 
 
+public void DeleteuserListMerchant() {
+	System.out.println("Delete  User List for Merchant..");
+	
+	WebElement panelmenuform = driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Setting')]"));Helper.staticWait(3000);
+	panelmenuform.click();Helper.staticWait(3000);
+	//click on user group permission 
+	System.out.println("click on setting menu..");
+	driver.findElement(By.xpath("//a[contains(text(),'User List')]")).click();Helper.staticWait(3000);
+	
+	driver.findElement(By.xpath("//div[@id='table_main_filter']//input")).sendKeys("ALL01M");Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@type='checkbox' and @name='id[]']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//div[@id='deleteBtn']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//button[@id='YESDele']")).click();Helper.staticWait(5000);
+	
+}
+
+
+
+
+public void DeleteuserListInternal() {
+	System.out.println("Delete  User List for Internal..");
+	
+	WebElement panelmenuform = driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Setting')]"));Helper.staticWait(3000);
+	panelmenuform.click();Helper.staticWait(3000);
+	//click on user group permission 
+	System.out.println("click on setting menu..");
+	driver.findElement(By.xpath("//a[contains(text(),'User List')]")).click();Helper.staticWait(3000);
+	
+	driver.findElement(By.xpath("//div[@id='table_internal_filter']//input")).sendKeys("ALL01I");Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@type='checkbox' and @name='id[]']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//div[@id='deleteBtn']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//button[@id='YESDele']")).click();Helper.staticWait(5000);
+	
+}
+	
+	
+
+
+
+
+
+
 
 
 

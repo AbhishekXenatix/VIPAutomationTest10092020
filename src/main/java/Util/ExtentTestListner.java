@@ -3,6 +3,7 @@ package Util;
 import org.testng.ITestListener;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +18,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import VIPqabase.TestBase;
@@ -49,17 +51,16 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		ExtentTestManager.getTest().log(Status.FAIL,
-				MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
+		ExtentTestManager.getTest().log(Status.FAIL,MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 		String screenshotPath = getScreenShot(driver, result.getName());
-		try {
-			ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below ",
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath
-				+ " target=\"_blank\">ScreenShot_" + result.getMethod().getMethodName() + "</a>");
+		
+		
+		  try { ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
+		  ,MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()); }
+		  catch (IOException e) { e.printStackTrace(); }
+		
+			
+		ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" + result.getMethod().getMethodName() + "</a>");
 	}
 
 	@Override
@@ -88,5 +89,10 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 		}
 		return destination;
 	}
+	
+	
+
+	
+
 
 }

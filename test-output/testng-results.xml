@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="14" total="15" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41949" started-at="2020-07-30T15:18:25 CST" finished-at="2020-07-30T15:19:07 CST">
+  <suite name="Suite" duration-ms="41236" started-at="2020-07-30T16:32:25 CST" finished-at="2020-07-30T16:33:06 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="41949" started-at="2020-07-30T15:18:25 CST" finished-at="2020-07-30T15:19:07 CST">
+    <test name="Test" duration-ms="41236" started-at="2020-07-30T16:32:25 CST" finished-at="2020-07-30T16:33:06 CST">
       <class name="TestScript.RegressionTest">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@2638011]" name="BaseCar" is-config="true" duration-ms="7250" started-at="2020-07-30T15:18:25 CST" finished-at="2020-07-30T15:18:33 CST">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@2638011]" name="BaseCar" is-config="true" duration-ms="6623" started-at="2020-07-30T16:32:25 CST" finished-at="2020-07-30T16:32:32 CST">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="FAIL" signature="TestCase_002_Shop_Group_Management_DownloadPDF()[pri:2, instance:TestScript.RegressionTest@2638011]" name="TestCase_002_Shop_Group_Management_DownloadPDF" duration-ms="34142" started-at="2020-07-30T15:18:33 CST" finished-at="2020-07-30T15:19:07 CST">
+        <test-method status="FAIL" signature="TestCase_002_Shop_Group_Management_DownloadPDF()[pri:2, instance:TestScript.RegressionTest@2638011]" name="TestCase_002_Shop_Group_Management_DownloadPDF" duration-ms="34090" started-at="2020-07-30T16:32:32 CST" finished-at="2020-07-30T16:33:06 CST">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -26,8 +26,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b6568b3a017a6c8fe4a2b8c48ff50817]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: abd809c3d30285f5d73180d01a4d263c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -35,8 +35,8 @@ Session ID: b6568b3a017a6c8fe4a2b8c48ff50817]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b6568b3a017a6c8fe4a2b8c48ff50817
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: abd809c3d30285f5d73180d01a4d263c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_002_Shop_Group_Management_DownloadPDF -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@2638011]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-30T15:19:07 CST" finished-at="2020-07-30T15:19:07 CST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@2638011]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-30T16:33:06 CST" finished-at="2020-07-30T16:33:06 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -97,19 +97,25 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 	public static String getScreenShotas(WebDriver driver, String screenshotName) {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		String source = ts.getScreenshotAs(OutputType.BASE64);
+		
+		String sourceBase64 = ts.getScreenshotAs(OutputType.BASE64);
+		
+		File fileDesti = OutputType.FILE.convertFromBase64Png(sourceBase64);
+		
 		String destination = System.getProperty("user.dir") + "/test-output/Screenshots/" + screenshotName + dateName + ".png";
 	
 		System.out.println("Destination is" + destination);
-		File finalDestination = new File(destination);
-		File finalsource = new File(source);
+		
 		try {
-			FileUtils.copyFile(finalsource, finalDestination);
+			FileUtils.copyFile(fileDesti, new File("data:image/png;base64", (System.getProperty("user.dir") + "/test-output/Screenshots/" + screenshotName+ dateName + ".png" )), true);
+			//FileUtils.copyFile(fileDesti, new File(" data:image/png;base64,C:/Users/abhishek.g/eclipse-workspace/VIPSystemSCLAutomation/test-output/Screenshots/ " + screenshotName+ dateName + ".png" ), true);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return destination;
+		return sourceBase64;
+		
+		
 	}
 	
 	
@@ -120,8 +126,9 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 	  
 	  
 	  try {
+		  
 		  ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
-	  ,MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+				  ,MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotPath).build());
 		  }
 	  catch (IOException e) 
 	  { e.printStackTrace(); }

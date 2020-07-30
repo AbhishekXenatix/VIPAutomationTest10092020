@@ -21,10 +21,10 @@ public class UserListForSetting extends TestBase{
 	public void CreateUserListforMerchant() {
 		
 		System.out.println("Create user list for Merchant..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();
+		 driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Setting')]")).click();Helper.staticWait(3000);
 		//click user list
 		
-		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'User List')]")).click();Helper.staticWait(3000);
 		//click on new item
 		
 		driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000);
@@ -71,10 +71,10 @@ public class UserListForSetting extends TestBase{
 public void CreateUserListforInternal() {
 		
 		System.out.println("Create user list for Internal..");
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[8]/a")).click();Helper.staticWait(2000);
+		 driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Setting')]")).click();Helper.staticWait(3000);
 		//click user list
 		
-		driver.findElement(By.xpath("//*[@id=\"mm-4\"]/ul/li[3]/a")).click();Helper.staticWait(2000);
+		 driver.findElement(By.xpath("//a[contains(text(),'User List')]")).click();Helper.staticWait(3000);
 		//click on new item
 		
 		//select internal 

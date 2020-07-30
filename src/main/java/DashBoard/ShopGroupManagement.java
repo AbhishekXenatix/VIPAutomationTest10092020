@@ -36,7 +36,7 @@ public class ShopGroupManagement extends TestBase {
 		log.info("Create Shop Group ..");
 		//click on shop for open group management 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();
 		 ExtentTestManager.getTest().log(Status.INFO, "Hellooo started Test Case 1");
 		 
 		  
@@ -46,7 +46,7 @@ public class ShopGroupManagement extends TestBase {
 	public  void ShopGroupList() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//click on shop group management option 
-		WebElement SGM = driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[2]/a"));
+		WebElement SGM = driver.findElement(By.xpath("//a[contains(text(),'Shop Group Management')]"));Helper.staticWait(3000);
 		SGM.click();
 		 ExtentTestManager.getTest().log(Status.INFO, "Shop Group created"); 
 		 ExtentTestManager.getTest().log(Status.INFO, "Shop menu clicked..");
@@ -165,9 +165,9 @@ public class ShopGroupManagement extends TestBase {
 	public void DeleteGroupname() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		 driver.findElement(By.xpath("//a[contains(text(),'Shop Group Management')]")).click();Helper.staticWait(3000);
 		//click on Advance search 
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
 		//enter value in group name search 
@@ -186,9 +186,9 @@ public class ShopGroupManagement extends TestBase {
 		String name = "Shop Group List Record.pdf";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop Group Management')]")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, name), "Failed to download Expected document");
 		
@@ -200,9 +200,9 @@ public class ShopGroupManagement extends TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop Group Management')]")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
 	    

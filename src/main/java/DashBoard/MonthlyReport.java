@@ -32,8 +32,8 @@ public class MonthlyReport extends TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(3000);
-		driver.findElement(By.xpath("//*[contains(text(),'Monthly Report')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Monthly Report')]")).click();Helper.staticWait(3000);
 		
 		
 		//Date
@@ -75,7 +75,7 @@ public class MonthlyReport extends TestBase {
 		         
 		         
 		         Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
-		         card.selectByVisibleText("GOLD");
+		         card.selectByVisibleText("GOLD");Helper.staticWait(3000);
 		         card.selectByIndex(8);
 			 
 		         
@@ -83,7 +83,7 @@ public class MonthlyReport extends TestBase {
 		         
 		
 		
-		driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/div/div/div[2]/div/button")).click();Helper.staticWait(5000);
+		driver.findElement(By.xpath("//button[@class='btn btn-primary float-right reportsubmit']")).click();Helper.staticWait(5000);
 		
 		
 		

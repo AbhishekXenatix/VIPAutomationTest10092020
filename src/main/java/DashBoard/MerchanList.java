@@ -27,10 +27,10 @@ public class MerchanList extends TestBase {
 	
 	public void setshoplist() {
 		//click again on shop from dashboard for create mew Shop
-		 driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();
+		 driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();
 		  Helper.staticWait(2000);
 		  //click on Shop List for open new 
-		  driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.
+		  driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.
 		  staticWait(2000);
 		 // driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000);
 		
@@ -226,9 +226,9 @@ public class MerchanList extends TestBase {
 		String name = "Shop Group List Record.pdf";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+		 driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//*[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(2000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, name), "Failed to download Expected document");
 		
@@ -240,9 +240,9 @@ public class MerchanList extends TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//*[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
 		
@@ -254,9 +254,9 @@ public class MerchanList extends TestBase {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("Create Point Scheme from shop list");
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//*[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		
 		
 		//click on new item button
@@ -313,9 +313,9 @@ public class MerchanList extends TestBase {
 		
 		System.out.println("Update Point Scheme from shop list");
 		
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//*[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		
 		
 		//click on new item button
@@ -370,9 +370,9 @@ public class MerchanList extends TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-	     driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		System.out.println("click on new Item from shop list");
 		
 		//click on Advanced search button
@@ -465,9 +465,9 @@ public class MerchanList extends TestBase {
 	public void DeleteGroupnameforshoplist() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
-		//shop list
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
+		//shop list management 
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
 		//click on Advance search 
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
 		//enter value in group name search 
@@ -495,9 +495,9 @@ public class MerchanList extends TestBase {
 	public void DeleteGroupnameforshoplistSeven() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//shop menu
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
-		//shop list
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
+		//shop list management 
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
 		//click on Advance search 
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(7000);
 		//enter value in group name search 
@@ -528,8 +528,8 @@ public void VerifyshopMerchantNameM() throws InterruptedException  {
 		String nodata ="No matching records found";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
-		driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
 		  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Mannings");Helper.staticWait(3000);
 		WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
 			System.out.println((searchresult).getText());
@@ -549,8 +549,8 @@ public void VerifyshopMerchantNameS() throws InterruptedException  {
 	String nodata ="No matching records found";
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
-	driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[2]/a")).click();Helper.staticWait(3000);
-	driver.findElement(By.xpath("//*[@id=\"mm-1\"]/ul/li[1]/a")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
 	  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Seven11");Helper.staticWait(3000);
 	  
 	WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));

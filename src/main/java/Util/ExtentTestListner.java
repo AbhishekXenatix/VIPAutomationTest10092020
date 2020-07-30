@@ -49,19 +49,22 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 
 	}
 
-	@Override
-	public void onTestFailure(ITestResult result) {
-		ExtentTestManager.getTest().log(Status.FAIL,MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
-		String screenshotPath = getScreenShot(driver, result.getName());
-		
-		
-		  try { ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
-		  ,MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()); }
-		  catch (IOException e) { e.printStackTrace(); }
-		
-			
-		ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" + result.getMethod().getMethodName() + "</a>");
-	}
+	/*
+	 * @Override public void onTestFailure(ITestResult result) {
+	 * ExtentTestManager.getTest().log(Status.FAIL,MarkupHelper.createLabel(result.
+	 * getName() + " - Test Case Failed", ExtentColor.RED)); String screenshotPath =
+	 * getScreenShotas(driver, result.getName());
+	 * 
+	 * 
+	 * try { ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
+	 * ,MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()); }
+	 * catch (IOException e) { e.printStackTrace(); }
+	 * 
+	 * 
+	 * ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " +
+	 * "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" +
+	 * result.getMethod().getMethodName() + "</a>"); }
+	 */
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
@@ -73,24 +76,60 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 	}
+	/*
+	 * public static String getScreenShot(WebDriver driver, String screenshotName) {
+	 * String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	 * TakesScreenshot ts = (TakesScreenshot) driver; File source =
+	 * ts.getScreenshotAs(OutputType.FILE); String destination =
+	 * System.getProperty("user.dir") + "/test-output/Screenshots/" + screenshotName
+	 * + dateName + ".png"; //String destination = System.
+	 * getProperty("C:\\Users\\abhishek.g\\.jenkins\\workspace\\VIP Automation\\test-output\\Screenshots"
+	 * ) + screenshotName + dateName + ".png"; System.out.println("Destination is" +
+	 * destination); File finalDestination = new File(destination); try {
+	 * FileUtils.copyFile(source, finalDestination); } catch (IOException e) {
+	 * e.printStackTrace(); } return destination; }
+	 */
+	
+	
+	
 
-	public static String getScreenShot(WebDriver driver, String screenshotName) {
+
+	public static String getScreenShotas(WebDriver driver, String screenshotName) {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
+		String source = ts.getScreenshotAs(OutputType.BASE64);
 		String destination = System.getProperty("user.dir") + "/test-output/Screenshots/" + screenshotName + dateName + ".png";
-		//String destination = System.getProperty("C:\\Users\\abhishek.g\\.jenkins\\workspace\\VIP Automation\\test-output\\Screenshots") + screenshotName + dateName + ".png";
+	
 		System.out.println("Destination is" + destination);
 		File finalDestination = new File(destination);
+		File finalsource = new File(source);
 		try {
-			FileUtils.copyFile(source, finalDestination);
+			FileUtils.copyFile(finalsource, finalDestination);
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return destination;
 	}
 	
 	
+	
+	  @Override public void onTestFailure(ITestResult result) {
+	  ExtentTestManager.getTest().log(Status.FAIL,MarkupHelper.createLabel(result. getName() + " - Test Case Failed", ExtentColor.RED)); 
+	  String screenshotPath = getScreenShotas(driver, result.getName());
+	  
+	  
+	  try {
+		  ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
+	  ,MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+		  }
+	  catch (IOException e) 
+	  { e.printStackTrace(); }
+	  
+	  
+	  ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" +
+	  result.getMethod().getMethodName() + "</a>"); }
+	 
 
 	
 

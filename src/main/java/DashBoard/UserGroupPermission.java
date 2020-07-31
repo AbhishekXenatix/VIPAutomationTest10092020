@@ -91,7 +91,8 @@ public void DeleteusergrouppermissionInternal() {
 	driver.findElement(By.id("INT-tab")).click();Helper.staticWait(2000);
 	driver.findElement(By.xpath("//div[@id='table_internal_filter']//input")).sendKeys("All Select Int");Helper.staticWait(3000);
 	
-	driver.findElement(By.xpath("//*[@type='checkbox' and @name='id[]']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@id=\"table_internal\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
+	
 	driver.findElement(By.xpath("//div[@id='deleteBtn']")).click();Helper.staticWait(3000);
 	driver.findElement(By.xpath("//button[@id='YESDele']")).click();Helper.staticWait(5000);
 	

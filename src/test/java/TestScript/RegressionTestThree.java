@@ -176,12 +176,12 @@ public class RegressionTestThree  extends TestBase {
 	  
 	  
 	  
-	  @Test(priority=16, enabled=false)
+	  @Test(priority=16, enabled=true)
 	  public void TestCase_033_DeleteSetting() {
 		  
 		  
-		 // UGP.DeleteusergrouppermissionMerchant();
-		 // UGP.DeleteusergrouppermissionInternal();
+		 UGP.DeleteusergrouppermissionMerchant();
+		UGP.DeleteusergrouppermissionInternal();
 		  ULFS.DeleteuserListMerchant();
 		  ULFS.DeleteuserListInternal();
 	  }

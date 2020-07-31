@@ -130,23 +130,27 @@
                   <a name="TestCase_033_DeleteSetting">
                   </a> <!-- TestCase_033_DeleteSetting -->
                   <span class="method-name">TestCase_033_DeleteSetting</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=84.0.4147.89)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;table_internal&quot;]/tbody/tr/td[1]/input&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;SPHKRD05&apos;, ip: &apos;10.1.6.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4273e560e352af3f2f9d87f28724bcf7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87512f72097137320b5f9927a413bf2b
+*** Element info: {Using=xpath, value=//*[@id=&quot;table_internal&quot;]/tbody/tr/td[1]/input}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at DashBoard.UserListForSetting.DeleteuserListMerchant(UserListForSetting.java:117)
-	at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:185)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at DashBoard.UserGroupPermission.DeleteusergrouppermissionInternal(UserGroupPermission.java:94)
+	at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:184)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -211,12 +215,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestCase_033_DeleteSetting')
 data.setCell(0, 2, 'TestScript.RegressionTestThree')
-data.setCell(0, 3, 43597);
+data.setCell(0, 3, 67580);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,9 +245,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">TestCase_031_ShopListDelete</span>
                 <br/>
-                <span class="ignored-method-name">TestCase_022_TransactionsDownloadExcel</span>
-                <br/>
                 <span class="ignored-method-name">TestCase_019_UserListForSetting_CreateInternal</span>
+                <br/>
+                <span class="ignored-method-name">TestCase_022_TransactionsDownloadExcel</span>
                 <br/>
                 <span class="ignored-method-name">TestCase_018_UserListForSetting_CreateMerchant</span>
                 <br/>
@@ -288,11 +292,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestCase_033_DeleteSetting</span>
-                <span class="method-start">6621 ms</span>
+                <span class="method-start">6884 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">50661 ms</span>
+                <span class="method-start">74844 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

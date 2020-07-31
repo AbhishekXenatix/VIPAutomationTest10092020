@@ -131,9 +131,10 @@ public void DeleteuserListInternal() {
 	//click on user group permission 
 	System.out.println("click on setting menu..");
 	driver.findElement(By.xpath("//a[contains(text(),'User List')]")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@id=\"INT-tab\"]")).click();Helper.staticWait(2000);
 	
 	driver.findElement(By.xpath("//div[@id='table_internal_filter']//input")).sendKeys("ALL01I");Helper.staticWait(3000);
-	driver.findElement(By.xpath("//*[@type='checkbox' and @name='id[]']")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//*[@id=\"table_internal\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 	driver.findElement(By.xpath("//div[@id='deleteBtn']")).click();Helper.staticWait(3000);
 	driver.findElement(By.xpath("//button[@id='YESDele']")).click();Helper.staticWait(5000);
 	

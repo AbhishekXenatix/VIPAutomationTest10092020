@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="16" total="17" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50751" started-at="2020-07-30T17:53:57 CST" finished-at="2020-07-30T17:54:47 CST">
+  <suite name="Suite" duration-ms="74936" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:31:51 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="50751" started-at="2020-07-30T17:53:57 CST" finished-at="2020-07-30T17:54:47 CST">
+    <test name="Test" duration-ms="74936" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:31:51 CST">
       <class name="TestScript.RegressionTestThree">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="BaseCar" is-config="true" duration-ms="6616" started-at="2020-07-30T17:53:57 CST" finished-at="2020-07-30T17:54:03 CST">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="BaseCar" is-config="true" duration-ms="6879" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:30:43 CST">
           <params>
             <param index="0">
               <value>
@@ -18,25 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="FAIL" signature="TestCase_033_DeleteSetting()[pri:16, instance:TestScript.RegressionTestThree@3c0be339]" name="TestCase_033_DeleteSetting" duration-ms="43597" started-at="2020-07-30T17:54:03 CST" finished-at="2020-07-30T17:54:47 CST">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="FAIL" signature="TestCase_033_DeleteSetting()[pri:16, instance:TestScript.RegressionTestThree@3c0be339]" name="TestCase_033_DeleteSetting" duration-ms="67580" started-at="2020-07-31T09:30:43 CST" finished-at="2020-07-31T09:31:50 CST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=84.0.4147.89)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table_internal"]/tbody/tr/td[1]/input"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4273e560e352af3f2f9d87f28724bcf7]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87512f72097137320b5f9927a413bf2b
+*** Element info: {Using=xpath, value=//*[@id="table_internal"]/tbody/tr/td[1]/input}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=84.0.4147.89)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table_internal"]/tbody/tr/td[1]/input"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4273e560e352af3f2f9d87f28724bcf7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87512f72097137320b5f9927a413bf2b
+*** Element info: {Using=xpath, value=//*[@id="table_internal"]/tbody/tr/td[1]/input}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -47,10 +51,12 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at DashBoard.UserListForSetting.DeleteuserListMerchant(UserListForSetting.java:117)
-at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:185)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at DashBoard.UserGroupPermission.DeleteusergrouppermissionInternal(UserGroupPermission.java:94)
+at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:184)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,11 +87,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_033_DeleteSetting -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="teardown" is-config="true" duration-ms="0" started-at="2020-07-30T17:54:47 CST" finished-at="2020-07-30T17:54:47 CST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="teardown" is-config="true" duration-ms="1" started-at="2020-07-31T09:31:51 CST" finished-at="2020-07-31T09:31:51 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

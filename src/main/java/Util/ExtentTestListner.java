@@ -134,8 +134,8 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 	  { e.printStackTrace(); }
 	  
 	  
-	  ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" +
-	  result.getMethod().getMethodName() + "</a>"); }
+	  //ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" + result.getMethod().getMethodName() + "</a>"); 
+	  }
 	 
 
 	

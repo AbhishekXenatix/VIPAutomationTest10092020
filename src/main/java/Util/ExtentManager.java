@@ -60,8 +60,7 @@ public class ExtentManager {
         extent.setSystemInfo("Operating System", System.getProperty("os.name"));
         extent.setSystemInfo("User Name", System.getProperty("user.name"));
         extent.setSystemInfo("Java Version :", System.getProperty("java.version"));
-        extent.setSystemInfo("Machine Name :", System.getProperty("machine.name"));
-        extent.setSystemInfo("IP Address :", System.getProperty("machine.address"));
+        
         
         
       

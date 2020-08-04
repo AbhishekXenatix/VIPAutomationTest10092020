@@ -88,7 +88,7 @@ public class Transactions extends TestBase {
 	
 	
 	public void selectDateto() {
-		 SimpleDateFormat formatter = new SimpleDateFormat("dd");
+		 SimpleDateFormat formatter = new SimpleDateFormat("d");
 		Date today = new Date();
 		String date = formatter.format(today);
 		System.out.println(date);

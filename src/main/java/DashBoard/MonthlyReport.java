@@ -38,7 +38,13 @@ public class MonthlyReport extends TestBase {
 		
 		//Date
 		WebElement tdate = driver.findElement(By.id("advSearch_Date_txn_month"));
-		tdate.click();tdate.sendKeys(Keys.ENTER);Helper.staticWait(3000);
+		tdate.click();Helper.staticWait(3000);
+		
+		 Select mnth =  new Select (driver.findElement(By.xpath("//select[@class='ui-datepicker-month']")));
+		 mnth.selectByVisibleText("Jul");
+          
+          tdate.sendKeys(Keys.ENTER);Helper.staticWait(3000);
+		
 		
 		
 		  //Shop Group

@@ -30,7 +30,7 @@ public class DailyReport extends TestBase{
 		
 		System.out.println("Create a Daily Report..");
 			
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        Helper.staticWait(3000);
 			//driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(3000);
 			driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]")).click();Helper.staticWait(3000);
 			driver.findElement(By.xpath("//a[contains(text(),'Daily Report')]")).click();Helper.staticWait(3000);

@@ -28,11 +28,13 @@ public class TestBase {
 	@BeforeClass(alwaysRun = true)
 	@Parameters("BrowserName")
 	public static WebDriver BaseCar(String BrowserName) {
+		
 		if(BrowserName.equalsIgnoreCase("chrome")) {
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\abhishek.g\\Downloads\\softwares\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get(URL);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
 			
 			

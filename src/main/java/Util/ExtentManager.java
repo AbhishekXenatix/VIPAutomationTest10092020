@@ -1,6 +1,7 @@
 package Util;
 
 import com.aventstack.extentreports.ExtentReports;
+//import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -32,7 +33,8 @@ public class ExtentManager {
         
 
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
-//        htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+        //ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
+       //  htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
         //htmlReporter.config().setChartVisibilityOnOpen(true);
 		 //htmlReporter.config().setAutoCreateRelativePathMedia(true);
 		// Name of the report
@@ -44,11 +46,12 @@ public class ExtentManager {
         htmlReporter.config().setReportName(reportFileName);
         htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm aa '('zzz')'");
        
+       
 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         //Set environment details
-        extent.setSystemInfo("Host Name", "Selenium POM");
+        extent.setSystemInfo("Host Name", "Selenium CI");
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("Application", "VIPS Dashboard");
         extent.setSystemInfo("Browser","Chrome");
@@ -56,7 +59,11 @@ public class ExtentManager {
         extent.setSystemInfo("Run Started on", curDate.toString());
         extent.setSystemInfo("Operating System", System.getProperty("os.name"));
         extent.setSystemInfo("User Name", System.getProperty("user.name"));
-       
+        extent.setSystemInfo("Java Version :", System.getProperty("java.version"));
+        extent.setSystemInfo("Machine Name :", System.getProperty("machine.name"));
+        extent.setSystemInfo("IP Address :", System.getProperty("machine.address"));
+        
+        
       
         
 

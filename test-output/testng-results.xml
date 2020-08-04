@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="16" total="17" passed="0">
+<testng-results skipped="0" failed="1" ignored="4" total="33" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="74936" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:31:51 CST">
+  <suite name="Suite" duration-ms="944615" started-at="2020-08-04T13:50:09 CST" finished-at="2020-08-04T14:05:54 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="74936" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:31:51 CST">
+    <test name="Test" duration-ms="944615" started-at="2020-08-04T13:50:09 CST" finished-at="2020-08-04T14:05:54 CST">
       <class name="TestScript.RegressionTestThree">
-        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="BaseCar" is-config="true" duration-ms="6879" started-at="2020-07-31T09:30:36 CST" finished-at="2020-07-31T09:30:43 CST">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTestThree@6a2b953e]" name="BaseCar" is-config="true" duration-ms="7010" started-at="2020-08-04T13:59:12 CST" finished-at="2020-08-04T13:59:19 CST">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseCar -->
-        <test-method status="FAIL" signature="TestCase_033_DeleteSetting()[pri:16, instance:TestScript.RegressionTestThree@3c0be339]" name="TestCase_033_DeleteSetting" duration-ms="67580" started-at="2020-07-31T09:30:43 CST" finished-at="2020-07-31T09:31:50 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="TestCase_016_UserGroupPermission_Internal()[pri:1, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_016_UserGroupPermission_Internal" duration-ms="24874" started-at="2020-08-04T13:59:19 CST" finished-at="2020-08-04T13:59:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_016_UserGroupPermission_Internal -->
+        <test-method status="PASS" signature="TestCase_017_UserGroupPermission_Merchant()[pri:2, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_017_UserGroupPermission_Merchant" duration-ms="25093" started-at="2020-08-04T13:59:44 CST" finished-at="2020-08-04T14:00:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_017_UserGroupPermission_Merchant -->
+        <test-method status="PASS" signature="TestCase_018_UserListForSetting_CreateMerchant()[pri:3, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_018_UserListForSetting_CreateMerchant" duration-ms="37624" started-at="2020-08-04T14:00:09 CST" finished-at="2020-08-04T14:00:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_018_UserListForSetting_CreateMerchant -->
+        <test-method status="PASS" signature="TestCase_019_UserListForSetting_CreateInternal()[pri:4, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_019_UserListForSetting_CreateInternal" duration-ms="26273" started-at="2020-08-04T14:00:47 CST" finished-at="2020-08-04T14:01:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_019_UserListForSetting_CreateInternal -->
+        <test-method status="PASS" signature="TestCase_020_Transactions()[pri:5, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_020_Transactions" duration-ms="41082" started-at="2020-08-04T14:01:13 CST" finished-at="2020-08-04T14:01:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_020_Transactions -->
+        <test-method status="PASS" signature="TestCase_021_TransactionsDownloadPDF()[pri:6, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_021_TransactionsDownloadPDF" duration-ms="3252" started-at="2020-08-04T14:01:54 CST" finished-at="2020-08-04T14:01:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_021_TransactionsDownloadPDF -->
+        <test-method status="PASS" signature="TestCase_022_TransactionsDownloadExcel()[pri:7, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_022_TransactionsDownloadExcel" duration-ms="3091" started-at="2020-08-04T14:01:57 CST" finished-at="2020-08-04T14:02:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_022_TransactionsDownloadExcel -->
+        <test-method status="PASS" signature="TestCase_023_MonthlyReport()[pri:8, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_023_MonthlyReport" duration-ms="24300" started-at="2020-08-04T14:02:01 CST" finished-at="2020-08-04T14:02:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_023_MonthlyReport -->
+        <test-method status="FAIL" signature="TestCase_026_DailyReport()[pri:11, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_026_DailyReport" duration-ms="84" started-at="2020-08-04T14:02:25 CST" finished-at="2020-08-04T14:02:25 CST">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table_internal"]/tbody/tr/td[1]/input"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[unexpected alert open: {Alert text : No columns data return!}
+  (Session info: chrome=84.0.4147.105): No columns data return!
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 87512f72097137320b5f9927a413bf2b
-*** Element info: {Using=xpath, value=//*[@id="table_internal"]/tbody/tr/td[1]/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:57221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0697ae75cc9f260f0f602b323beac11c
+*** Element info: {Using=xpath, value=//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table_internal"]/tbody/tr/td[1]/input"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : No columns data return!}
+  (Session info: chrome=84.0.4147.105): No columns data return!
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SPHKRD05', ip: '10.1.6.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 87512f72097137320b5f9927a413bf2b
-*** Element info: {Using=xpath, value=//*[@id="table_internal"]/tbody/tr/td[1]/input}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:57221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0697ae75cc9f260f0f602b323beac11c
+*** Element info: {Using=xpath, value=//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -55,8 +80,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at DashBoard.UserGroupPermission.DeleteusergrouppermissionInternal(UserGroupPermission.java:94)
-at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:184)
+at DashBoard.DailyReport.ReportDaily(DailyReport.java:35)
+at TestScript.RegressionTestThree.TestCase_026_DailyReport(RegressionTestThree.java:122)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,15 +112,376 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_026_DailyReport -->
+        <test-method status="PASS" signature="TestCase_030_ShopGroupDelete()[pri:14, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_030_ShopGroupDelete" duration-ms="21943" started-at="2020-08-04T14:02:25 CST" finished-at="2020-08-04T14:02:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_030_ShopGroupDelete -->
+        <test-method status="PASS" signature="TestCase_031_ShopListDelete()[pri:15, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_031_ShopListDelete" duration-ms="69619" started-at="2020-08-04T14:02:47 CST" finished-at="2020-08-04T14:03:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_031_ShopListDelete -->
+        <test-method status="PASS" signature="TestCase_032_DeleteOthers()[pri:16, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_032_DeleteOthers" duration-ms="18959" started-at="2020-08-04T14:03:57 CST" finished-at="2020-08-04T14:04:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_032_DeleteOthers -->
+        <test-method status="PASS" signature="TestCase_033_DeleteSetting()[pri:16, instance:TestScript.RegressionTestThree@6a2b953e]" name="TestCase_033_DeleteSetting" duration-ms="98009" started-at="2020-08-04T14:04:16 CST" finished-at="2020-08-04T14:05:54 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_033_DeleteSetting -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTestThree@3c0be339]" name="teardown" is-config="true" duration-ms="1" started-at="2020-07-31T09:31:51 CST" finished-at="2020-07-31T09:31:51 CST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTestThree@6a2b953e]" name="teardown" is-config="true" duration-ms="1" started-at="2020-08-04T14:05:54 CST" finished-at="2020-08-04T14:05:54 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestScript.RegressionTestThree -->
+      <class name="TestScript.RegressionTest">
+        <test-method status="PASS" signature="BaseCar(java.lang.String)[pri:0, instance:TestScript.RegressionTest@6ff29830]" name="BaseCar" is-config="true" duration-ms="8594" started-at="2020-08-04T13:50:09 CST" finished-at="2020-08-04T13:50:18 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BaseCar -->
+        <test-method status="PASS" signature="TestCase_001_Click_Shop_Group_Management()[pri:1, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_001_Click_Shop_Group_Management" duration-ms="50738" started-at="2020-08-04T13:50:18 CST" finished-at="2020-08-04T13:51:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_001_Click_Shop_Group_Management -->
+        <test-method status="PASS" signature="TestCase_002_Shop_Group_Management_DownloadPDF()[pri:2, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_002_Shop_Group_Management_DownloadPDF" duration-ms="9715" started-at="2020-08-04T13:51:09 CST" finished-at="2020-08-04T13:51:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_002_Shop_Group_Management_DownloadPDF -->
+        <test-method status="PASS" signature="TestCase_003_Shop_Group_Management_DownloadExcel()[pri:3, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_003_Shop_Group_Management_DownloadExcel" duration-ms="9550" started-at="2020-08-04T13:51:19 CST" finished-at="2020-08-04T13:51:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_003_Shop_Group_Management_DownloadExcel -->
+        <test-method status="PASS" signature="TestCase_004_Shop_List_Verify_TradingName01()[pri:4, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_004_Shop_List_Verify_TradingName01" duration-ms="43489" started-at="2020-08-04T13:51:28 CST" finished-at="2020-08-04T13:52:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_004_Shop_List_Verify_TradingName01 -->
+        <test-method status="PASS" signature="TestCase_005_Shop_List_Verify_TradingName02()[pri:5, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_005_Shop_List_Verify_TradingName02" duration-ms="45317" started-at="2020-08-04T13:52:12 CST" finished-at="2020-08-04T13:52:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_005_Shop_List_Verify_TradingName02 -->
+        <test-method status="PASS" signature="TestCase_006_Create_Shop_list(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_006_Create_Shop_list" duration-ms="89851" started-at="2020-08-04T13:52:58 CST" data-provider="getContactsTestData" finished-at="2020-08-04T13:54:28 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mannings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mong]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[GHD222]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ANM1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Thanks]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[HK]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[F-23]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Wan Chi]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Wai]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Account]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[547754747]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[a@gmail.com]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[G1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[thanks for Shopping]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Thanks]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Sale]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[Good Day]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[One]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_006_Create_Shop_list -->
+        <test-method status="PASS" signature="TestCase_006_Create_Shop_list(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_006_Create_Shop_list" duration-ms="89658" started-at="2020-08-04T13:54:28 CST" data-provider="getContactsTestData" finished-at="2020-08-04T13:55:57 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Seven11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kong]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A121]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[GHD333]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ANM2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Thanks]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[HK]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[F-21]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[NP]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Man]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[IT]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[34636636]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[a@gmail.com]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[G2]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[DEF]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Welcome Back]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Thanks]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Sale]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[Good Day]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Two]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_006_Create_Shop_list -->
+        <test-method status="PASS" signature="TestCase_007_PointSchemeShopList()[pri:7, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_007_PointSchemeShopList" duration-ms="47488" started-at="2020-08-04T13:55:57 CST" finished-at="2020-08-04T13:56:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_007_PointSchemeShopList -->
+        <test-method status="PASS" signature="TestCase_008_PointSchemeUpdateShopList()[pri:8, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_008_PointSchemeUpdateShopList" duration-ms="37692" started-at="2020-08-04T13:56:45 CST" finished-at="2020-08-04T13:57:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_008_PointSchemeUpdateShopList -->
+        <test-method status="PASS" signature="TestCase_009_shopListAdvSearch()[pri:9, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_009_shopListAdvSearch" duration-ms="31552" started-at="2020-08-04T13:57:22 CST" finished-at="2020-08-04T13:57:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_009_shopListAdvSearch -->
+        <test-method status="PASS" signature="TestCase_010_shop_List_DownloadPDF()[pri:10, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_010_shop_List_DownloadPDF" duration-ms="8042" started-at="2020-08-04T13:57:54 CST" finished-at="2020-08-04T13:58:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_010_shop_List_DownloadPDF -->
+        <test-method status="PASS" signature="TestCase_011_shop_List_DownloadExcel()[pri:11, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_011_shop_List_DownloadExcel" duration-ms="8547" started-at="2020-08-04T13:58:02 CST" finished-at="2020-08-04T13:58:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_011_shop_List_DownloadExcel -->
+        <test-method status="PASS" signature="TestCase_012_CreateTerminal()[pri:12, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_012_CreateTerminal" duration-ms="21912" started-at="2020-08-04T13:58:11 CST" finished-at="2020-08-04T13:58:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_012_CreateTerminal -->
+        <test-method status="PASS" signature="TestCase_013_TerminalSearch()[pri:13, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_013_TerminalSearch" duration-ms="25385" started-at="2020-08-04T13:58:32 CST" finished-at="2020-08-04T13:58:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_013_TerminalSearch -->
+        <test-method status="PASS" signature="TestCase_014_TerminalDownloadPDF()[pri:14, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_014_TerminalDownloadPDF" duration-ms="7583" started-at="2020-08-04T13:58:58 CST" finished-at="2020-08-04T13:59:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_014_TerminalDownloadPDF -->
+        <test-method status="PASS" signature="TestCase_015_TerminalDownloadExcel()[pri:15, instance:TestScript.RegressionTest@6ff29830]" name="TestCase_015_TerminalDownloadExcel" duration-ms="6817" started-at="2020-08-04T13:59:05 CST" finished-at="2020-08-04T13:59:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_015_TerminalDownloadExcel -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestScript.RegressionTest@6ff29830]" name="teardown" is-config="true" duration-ms="1" started-at="2020-08-04T13:59:12 CST" finished-at="2020-08-04T13:59:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestScript.RegressionTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

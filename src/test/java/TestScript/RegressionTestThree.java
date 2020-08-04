@@ -29,62 +29,60 @@ public class RegressionTestThree  extends TestBase {
 	Terminal terminal = new Terminal((WebDriver) driver);
 	
 	
-	 @Test(priority=1, enabled=true)
-	  public void TestCase_016_UserGroupPermission_Internal() {
-		  UGP.CreateInternalUserGroup();
-		  
-	  }
-	  
-	  
-	  @Test(priority=2, enabled=true)
-	  public void TestCase_017_UserGroupPermission_Merchant() {
 	
-		  UGP.CreatMerchantUserGroup();
-		  
+	  @Test(priority=1, enabled=true) public void
+	  TestCase_016_UserGroupPermission_Internal() { UGP.CreateInternalUserGroup();
+	  
 	  }
 	  
 	  
-	  @Test(priority=3, enabled=true)
-	  public void TestCase_018_UserListForSetting_CreateMerchant() {
-		 ULFS.CreateUserListforMerchant();
-		
-		  
+	  @Test(priority=2, enabled=true) public void
+	  TestCase_017_UserGroupPermission_Merchant() {
+	  
+	  UGP.CreatMerchantUserGroup();
+	  
 	  }
 	  
 	  
-	  @Test(priority=4, enabled=true)
-	  public void TestCase_019_UserListForSetting_CreateInternal() {
-		
-		 ULFS.CreateUserListforInternal();
-		  
+	  @Test(priority=3, enabled=true) public void
+	  TestCase_018_UserListForSetting_CreateMerchant() {
+	  ULFS.CreateUserListforMerchant();
+	  
+	  
+	  }
+	  
+	  
+	  @Test(priority=4, enabled=true) public void
+	  TestCase_019_UserListForSetting_CreateInternal() {
+	  
+	  ULFS.CreateUserListforInternal();
+	  
 	  }
 	  
 	  
 	  
-	  @Test(priority=5, enabled=true)
-	  public void TestCase_020_Transactions() {
-		  String from = "1";
-		 
-		  trns.Advancedsearchtransactions();
-		  trns.selectDatefrom(from);
-		  trns.selectDateto();
-		 
+	  @Test(priority=5, enabled=true) public void TestCase_020_Transactions() {
+	  String from = "1";
+	  
+	  trns.Advancedsearchtransactions(); trns.selectDatefrom(from);
+	  trns.selectDateto();
+	  
 	  }
 	  
-	  @Test(priority=6, enabled=true)
-	  public void TestCase_021_TransactionsDownloadPDF() {
-		  
-		  trns.TransactionDownloadPDF();
-		
+	  @Test(priority=6, enabled=true) public void
+	  TestCase_021_TransactionsDownloadPDF() {
+	  
+	  trns.TransactionDownloadPDF();
+	  
 	  }
 	  
 	  
-	  @Test(priority=7, enabled=true)
-	  public void TestCase_022_TransactionsDownloadExcel() {
-		  
-		
-		  trns.TransactionDownloadExcel();
-	  }
+	  @Test(priority=7, enabled=true) public void
+	  TestCase_022_TransactionsDownloadExcel() {
+	  
+	  
+	  trns.TransactionDownloadExcel(); }
+	 
 	  
 	  
 	  @Test(priority=8,enabled=true)

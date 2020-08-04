@@ -261,12 +261,12 @@ public class MerchanList extends TestBase {
 		
 		//click on new item button
 		//driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("Mannings");Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input")).sendKeys("Mannings");Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("table_main")).click();Helper.staticWait(2000);
 		
-		driver.findElement(By.xpath("//*[@id=\"slider_1\"]/div/div[2]/div[2]/div[2]/div[2]"));Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_block_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//*[@id=\"slider_1\"]/div/div[2]/div[2]/div[2]/div[2]"));Helper.staticWait(3000);
+		driver.findElement(By.xpath("//*[@id=\"table_block_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(3000);
 		
 		//create new Entry
 		
@@ -276,12 +276,12 @@ public class MerchanList extends TestBase {
 		//Effective from
 		
 		driver.findElement(By.id("DTE_Field_EFFECTIVE_PERIOD_FROM")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/table/tbody/tr[1]/td[3]/button")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/table/tbody/tr[2]/td[2]/button")).click();Helper.staticWait(3000);
 		
 		//Effective to 
 		
 		driver.findElement(By.id("DTE_Field_EFFECTIVE_PERIOD_TO")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/table/tbody/tr[2]/td[5]/button")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//button[contains(text(),'30')]")).click();Helper.staticWait(2000);
 		
 		
 		

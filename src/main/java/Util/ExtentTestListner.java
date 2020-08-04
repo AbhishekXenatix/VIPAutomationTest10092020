@@ -126,12 +126,12 @@ public class ExtentTestListner extends TestBase implements ITestListener {
 	  
 	  
 	  try {
-		  
-		  ExtentTestManager.getTest().fail("Test Case Failed Snapshot is below "
+		ExtentTestManager.getTest().fail("Test Case Failed..screenshot attched"
 				  ,MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotPath).build());
-		  }
-	  catch (IOException e) 
-	  { e.printStackTrace(); }
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	  
 	  
 	  //ExtentTestManager.getTest().log(Status.INFO, "ScreenShot Link : " + "<a href=" + screenshotPath+ " target=\"_blank\">ScreenShot_" + result.getMethod().getMethodName() + "</a>"); 

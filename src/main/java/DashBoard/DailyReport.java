@@ -35,8 +35,8 @@ public class DailyReport extends TestBase{
 			driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]")).click();Helper.staticWait(3000);
 			driver.findElement(By.xpath("//a[contains(text(),'Daily Report')]")).click();Helper.staticWait(3000);
 			
-		    driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(2000);
-			driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[4]/td[5]/a")).click();Helper.staticWait(3000);
+		    driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(3000);
+		
 			
 			/*
 			 * DateFormat customFormat = new SimpleDateFormat("dd"); Date currentdate = new
@@ -56,7 +56,7 @@ public class DailyReport extends TestBase{
 	
 	public void DailyReportShopGroupFilter() {
 		
-		System.out.println("Create a Daily Report and Based on Shop Group filter..");
+		System.out.println("Create a Daily Report  Based on Shop Group filter..");
 		
 		//Shop Group Filter
 		WebElement ElementDailyReportShopGroup = driver.findElement(By.id("advSearch_Select_shop_group"));
@@ -67,7 +67,7 @@ public class DailyReport extends TestBase{
 		 for(int i=0;i<DropDownShopGroupDailyReport.size();i++){
 			 String drop_down_ShopGroupDailyReport=DropDownShopGroupDailyReport.get(i).getText();
 			 System.out.println("dropdown values are " + drop_down_ShopGroupDailyReport);  }
-		         select.selectByVisibleText("Spectra SQA");Helper.staticWait(3000);
+		         select.selectByVisibleText("Spectra QA");Helper.staticWait(3000);
 		//driver.findElement(By.xpath("//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click();Helper.staticWait(3000);
 	}
 	
@@ -117,11 +117,16 @@ public class DailyReport extends TestBase{
 						  
 						  
 						  
-						  Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
-					         card.selectByVisibleText("DIAMOND");
-					         //card.selectByIndex(6);
-					         Helper.staticWait(3000);
-					         driver.findElement(By.xpath("//button[@class='btn btn-primary float-right reportsubmit']")).click();Helper.staticWait(5000);
+							
+							/*
+							 * Select card = new Select
+							 * (driver.findElement(By.id("advSearch_Select_card_tier")));
+							 * card.selectByVisibleText("DIAMOND"); //card.selectByIndex(6);
+							 */							 
+							  Helper.staticWait(3000); 
+							  
+						      driver.findElement(By.xpath("//button[@class='btn btn-primary float-right reportsubmit']")).click() ;Helper.staticWait(5000);
+							 
 						  
 						  }
 						 

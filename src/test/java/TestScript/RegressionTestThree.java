@@ -114,7 +114,7 @@ public class RegressionTestThree  extends TestBase {
 	  
 	  
 	  
-	  @Test(priority=11,enabled=true)
+	  @Test(priority=11,enabled=false)
 	  public void TestCase_026_DailyReport() throws InterruptedException {
 		  
 		  dailyreport.ReportDaily();

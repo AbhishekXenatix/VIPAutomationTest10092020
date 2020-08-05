@@ -142,13 +142,7 @@ public class RegressionTestThree  extends TestBase {
 	  }
 	  
 	  
-	  
-	  
-	
-	  
-	  
-	  
-	
+
 	  
 	  @Test(priority=14, enabled=true)
 	  public void TestCase_030_ShopGroupDelete() {
@@ -157,7 +151,7 @@ public class RegressionTestThree  extends TestBase {
 		 
 	  }
 	  
-	  @Test(priority=15, enabled=true)
+	  @Test(priority=17, enabled=true)
 	  public void TestCase_031_ShopListDelete() {
 		  
 		 ml.DeleteGroupnameforshoplist();
@@ -165,7 +159,7 @@ public class RegressionTestThree  extends TestBase {
 	  }
 	  
 	  
-	  @Test(priority=16, enabled=true)
+	  @Test(priority=15, enabled=true)
 	  public void TestCase_032_DeleteOthers() {
 		  
 		  terminal.deleteall();

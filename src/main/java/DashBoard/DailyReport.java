@@ -35,7 +35,7 @@ public class DailyReport extends TestBase{
 			driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]")).click();Helper.staticWait(3000);
 			driver.findElement(By.xpath("//a[contains(text(),'Daily Report')]")).click();Helper.staticWait(3000);
 			
-		    driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(3000);
+		   // driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(3000);
 		
 			
 			/*
@@ -57,17 +57,18 @@ public class DailyReport extends TestBase{
 	public void DailyReportShopGroupFilter() {
 		
 		System.out.println("Create a Daily Report  Based on Shop Group filter..");
-		
-		//Shop Group Filter
-		WebElement ElementDailyReportShopGroup = driver.findElement(By.id("advSearch_Select_shop_group"));
-		ElementDailyReportShopGroup.click();Helper.staticWait(3000);
-     	Select select = new Select(ElementDailyReportShopGroup); 
-     	
-		 List<WebElement> DropDownShopGroupDailyReport = select.getOptions();
-		 for(int i=0;i<DropDownShopGroupDailyReport.size();i++){
-			 String drop_down_ShopGroupDailyReport=DropDownShopGroupDailyReport.get(i).getText();
-			 System.out.println("dropdown values are " + drop_down_ShopGroupDailyReport);  }
-		         select.selectByVisibleText("Spectra QA");Helper.staticWait(3000);
+		/*
+		 * //Shop Group Filter WebElement ElementDailyReportShopGroup =
+		 * driver.findElement(By.id("advSearch_Select_shop_group"));
+		 * ElementDailyReportShopGroup.click();Helper.staticWait(3000); Select select =
+		 * new Select(ElementDailyReportShopGroup);
+		 * 
+		 * List<WebElement> DropDownShopGroupDailyReport = select.getOptions(); for(int
+		 * i=0;i<DropDownShopGroupDailyReport.size();i++){ String
+		 * drop_down_ShopGroupDailyReport=DropDownShopGroupDailyReport.get(i).getText();
+		 * System.out.println("dropdown values are " + drop_down_ShopGroupDailyReport);
+		 * } select.selectByVisibleText("Spectra QA");Helper.staticWait(3000);
+		 */
 		//driver.findElement(By.xpath("//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click();Helper.staticWait(3000);
 	}
 	

@@ -218,6 +218,8 @@ public class MerchanList extends TestBase {
 				  WebElement Saveall1 = driver.findElement(By.id("sliderBtnSaveNew"));
 				  Saveall1.click();
 				  Helper.staticWait(5000);
+				  
+				  System.out.println("Shop List entry finished..");
 	}
 	
 	
@@ -231,7 +233,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(2000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, name), "Failed to download Expected document");
-		
+	    System.out.println("ShopDownloadPDF finished..");
 		
 	}
 	
@@ -245,7 +247,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
-		
+	    System.out.println("ShopDownloadExcel finished..");
 		
 	}
 	
@@ -304,7 +306,7 @@ public class MerchanList extends TestBase {
 		
 		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(5000);
 		
-		
+		System.out.println("CreatePointScheme finished..");
 		
 	}
 	
@@ -354,7 +356,7 @@ public class MerchanList extends TestBase {
 		
 		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(5000);
 
-		
+		System.out.println("UpdatePointScheme finished..");
 	}
 	
 	
@@ -455,6 +457,8 @@ public class MerchanList extends TestBase {
 										         
 										         
 										         driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
+										         
+										         System.out.println("ShopListAdvancedSearch finished..");
 		         
 	}
 	
@@ -489,6 +493,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("YESDele")).click();Helper.staticWait(7000);
+		  System.out.println("DeleteGroupnameforshoplist finished..");
 	}
 	
 	
@@ -519,6 +524,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("YESDele")).click();Helper.staticWait(5000);
+		System.out.println("DeleteGroupnameforshoplistSeven finished..");
 	}
 	
 	

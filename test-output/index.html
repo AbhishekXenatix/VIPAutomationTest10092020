@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods,   28 passed</span>
+                    <span class="method-stats">27 methods, 2 failed,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTestThree" hash-for-method="TestCase_031_ShopListDelete">TestCase_031_ShopListDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTestThree" hash-for-method="TestCase_033_DeleteSetting">TestCase_033_DeleteSetting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,11 +159,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTest" hash-for-method="TestCase_007_PointSchemeShopList">TestCase_007_PointSchemeShopList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTest" hash-for-method="TestCase_008_PointSchemeUpdateShopList">TestCase_008_PointSchemeUpdateShopList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -229,17 +243,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTestThree" hash-for-method="TestCase_031_ShopListDelete">TestCase_031_ShopListDelete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTestThree" hash-for-method="TestCase_032_DeleteOthers">TestCase_032_DeleteOthers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScript.RegressionTestThree" hash-for-method="TestCase_033_DeleteSetting">TestCase_033_DeleteSetting</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -254,6 +258,72 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestScript.RegressionTestThree</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase_031_ShopListDelete">
+                  </a> <!-- TestCase_031_ShopListDelete -->
+                  <span class="method-name">TestCase_031_ShopListDelete</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;mm-btn mm-btn_next mm-listitem__btn mm-listitem__text&quot; href=&quot;#mm-1&quot; aria-owns=&quot;mm-1&quot; aria-haspopup=&quot;true&quot;&gt;...&lt;/a&gt; is not clickable at point (171, 110). Other element would receive the click: &lt;div id=&quot;jBox1-overlay&quot; class=&quot;jBox-overlay jBox-overlay-Modal&quot; style=&quot;display: block; opacity: 0.742405; z-index: 9999;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=84.0.4147.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SPHKRD05&apos;, ip: &apos;10.1.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:57336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b7b485f07d04fdb13378c82992bf2222
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at DashBoard.MerchanList.DeleteGroupnameforshoplistSeven(MerchanList.java:503)
+	at TestScript.RegressionTestThree.TestCase_031_ShopListDelete(RegressionTestThree.java:158)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase_033_DeleteSetting">
+                  </a> <!-- TestCase_033_DeleteSetting -->
+                  <span class="method-name">TestCase_033_DeleteSetting</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;table_internal&quot;]/tbody/tr/td[1]/input&quot;}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SPHKRD05&apos;, ip: &apos;10.1.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\abhishek.g\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:57336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b7b485f07d04fdb13378c82992bf2222
+*** Element info: {Using=xpath, value=//*[@id=&quot;table_internal&quot;]/tbody/tr/td[1]/input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at DashBoard.UserGroupPermission.DeleteusergrouppermissionInternal(UserGroupPermission.java:94)
+	at TestScript.RegressionTestThree.TestCase_033_DeleteSetting(RegressionTestThree.java:176)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -325,23 +395,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase_031_ShopListDelete">
-                  </a> <!-- TestCase_031_ShopListDelete -->
-                  <span class="method-name">TestCase_031_ShopListDelete</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TestCase_032_DeleteOthers">
                   </a> <!-- TestCase_032_DeleteOthers -->
                   <span class="method-name">TestCase_032_DeleteOthers</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase_033_DeleteSetting">
-                  </a> <!-- TestCase_033_DeleteSetting -->
-                  <span class="method-name">TestCase_033_DeleteSetting</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -408,13 +464,6 @@
                   <a name="TestCase_007_PointSchemeShopList">
                   </a> <!-- TestCase_007_PointSchemeShopList -->
                   <span class="method-name">TestCase_007_PointSchemeShopList</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase_008_PointSchemeUpdateShopList">
-                  </a> <!-- TestCase_008_PointSchemeUpdateShopList -->
-                  <span class="method-name">TestCase_008_PointSchemeUpdateShopList</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -522,124 +571,120 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(27);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestCase_033_DeleteSetting')
-data.setCell(0, 2, 'TestScript.RegressionTestThree')
-data.setCell(0, 3, 97921);
+data.setCell(0, 1, 'TestCase_006_Create_Shop_list')
+data.setCell(0, 2, 'TestScript.RegressionTest')
+data.setCell(0, 3, 100090);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TestCase_006_Create_Shop_list')
 data.setCell(1, 2, 'TestScript.RegressionTest')
-data.setCell(1, 3, 90143);
+data.setCell(1, 3, 99977);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestCase_006_Create_Shop_list')
+data.setCell(2, 1, 'TestCase_005_Shop_List_Verify_TradingName02')
 data.setCell(2, 2, 'TestScript.RegressionTest')
-data.setCell(2, 3, 89853);
+data.setCell(2, 3, 81835);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TestCase_031_ShopListDelete')
-data.setCell(3, 2, 'TestScript.RegressionTestThree')
-data.setCell(3, 3, 69421);
+data.setCell(3, 1, 'TestCase_007_PointSchemeShopList')
+data.setCell(3, 2, 'TestScript.RegressionTest')
+data.setCell(3, 3, 68103);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TestCase_007_PointSchemeShopList')
-data.setCell(4, 2, 'TestScript.RegressionTest')
-data.setCell(4, 3, 47497);
+data.setCell(4, 1, 'TestCase_033_DeleteSetting')
+data.setCell(4, 2, 'TestScript.RegressionTestThree')
+data.setCell(4, 3, 66910);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TestCase_001_Click_Shop_Group_Management')
-data.setCell(5, 2, 'TestScript.RegressionTest')
-data.setCell(5, 3, 43328);
+data.setCell(5, 1, 'TestCase_031_ShopListDelete')
+data.setCell(5, 2, 'TestScript.RegressionTestThree')
+data.setCell(5, 3, 53939);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TestCase_020_Transactions')
-data.setCell(6, 2, 'TestScript.RegressionTestThree')
-data.setCell(6, 3, 41259);
+data.setCell(6, 1, 'TestCase_009_shopListAdvSearch')
+data.setCell(6, 2, 'TestScript.RegressionTest')
+data.setCell(6, 3, 45563);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TestCase_008_PointSchemeUpdateShopList')
-data.setCell(7, 2, 'TestScript.RegressionTest')
-data.setCell(7, 3, 37647);
+data.setCell(7, 1, 'TestCase_016_UserGroupPermission_Internal')
+data.setCell(7, 2, 'TestScript.RegressionTestThree')
+data.setCell(7, 3, 41840);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TestCase_018_UserListForSetting_CreateMerchant')
+data.setCell(8, 1, 'TestCase_020_Transactions')
 data.setCell(8, 2, 'TestScript.RegressionTestThree')
-data.setCell(8, 3, 37630);
+data.setCell(8, 3, 41341);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TestCase_009_shopListAdvSearch')
-data.setCell(9, 2, 'TestScript.RegressionTest')
-data.setCell(9, 3, 31580);
+data.setCell(9, 1, 'TestCase_018_UserListForSetting_CreateMerchant')
+data.setCell(9, 2, 'TestScript.RegressionTestThree')
+data.setCell(9, 3, 37657);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TestCase_016_UserGroupPermission_Internal')
+data.setCell(10, 1, 'TestCase_023_MonthlyReport')
 data.setCell(10, 2, 'TestScript.RegressionTestThree')
-data.setCell(10, 3, 30078);
+data.setCell(10, 3, 27439);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TestCase_023_MonthlyReport')
+data.setCell(11, 1, 'TestCase_019_UserListForSetting_CreateInternal')
 data.setCell(11, 2, 'TestScript.RegressionTestThree')
-data.setCell(11, 3, 27461);
+data.setCell(11, 3, 26354);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TestCase_019_UserListForSetting_CreateInternal')
-data.setCell(12, 2, 'TestScript.RegressionTestThree')
-data.setCell(12, 3, 26341);
+data.setCell(12, 1, 'TestCase_012_CreateTerminal')
+data.setCell(12, 2, 'TestScript.RegressionTest')
+data.setCell(12, 3, 26268);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TestCase_017_UserGroupPermission_Merchant')
-data.setCell(13, 2, 'TestScript.RegressionTestThree')
-data.setCell(13, 3, 24995);
+data.setCell(13, 1, 'TestCase_013_TerminalSearch')
+data.setCell(13, 2, 'TestScript.RegressionTest')
+data.setCell(13, 3, 25360);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TestCase_013_TerminalSearch')
-data.setCell(14, 2, 'TestScript.RegressionTest')
-data.setCell(14, 3, 24930);
+data.setCell(14, 1, 'TestCase_017_UserGroupPermission_Merchant')
+data.setCell(14, 2, 'TestScript.RegressionTestThree')
+data.setCell(14, 3, 24970);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TestCase_030_ShopGroupDelete')
-data.setCell(15, 2, 'TestScript.RegressionTestThree')
-data.setCell(15, 3, 21968);
+data.setCell(15, 1, 'TestCase_001_Click_Shop_Group_Management')
+data.setCell(15, 2, 'TestScript.RegressionTest')
+data.setCell(15, 3, 22379);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TestCase_012_CreateTerminal')
-data.setCell(16, 2, 'TestScript.RegressionTest')
-data.setCell(16, 3, 21932);
+data.setCell(16, 1, 'TestCase_030_ShopGroupDelete')
+data.setCell(16, 2, 'TestScript.RegressionTestThree')
+data.setCell(16, 3, 22361);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TestCase_032_DeleteOthers')
-data.setCell(17, 2, 'TestScript.RegressionTestThree')
-data.setCell(17, 3, 19301);
+data.setCell(17, 1, 'TestCase_004_Shop_List_Verify_TradingName01')
+data.setCell(17, 2, 'TestScript.RegressionTest')
+data.setCell(17, 3, 19959);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TestCase_004_Shop_List_Verify_TradingName01')
-data.setCell(18, 2, 'TestScript.RegressionTest')
-data.setCell(18, 3, 9797);
+data.setCell(18, 1, 'TestCase_032_DeleteOthers')
+data.setCell(18, 2, 'TestScript.RegressionTestThree')
+data.setCell(18, 3, 19507);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TestCase_002_Shop_Group_Management_DownloadPDF')
+data.setCell(19, 1, 'TestCase_010_shop_List_DownloadPDF')
 data.setCell(19, 2, 'TestScript.RegressionTest')
-data.setCell(19, 3, 9701);
+data.setCell(19, 3, 18703);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TestCase_005_Shop_List_Verify_TradingName02')
+data.setCell(20, 1, 'TestCase_011_shop_List_DownloadExcel')
 data.setCell(20, 2, 'TestScript.RegressionTest')
-data.setCell(20, 3, 9685);
+data.setCell(20, 3, 18635);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'TestCase_003_Shop_Group_Management_DownloadExcel')
+data.setCell(21, 1, 'TestCase_002_Shop_Group_Management_DownloadPDF')
 data.setCell(21, 2, 'TestScript.RegressionTest')
-data.setCell(21, 3, 9465);
+data.setCell(21, 3, 9743);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'TestCase_011_shop_List_DownloadExcel')
+data.setCell(22, 1, 'TestCase_003_Shop_Group_Management_DownloadExcel')
 data.setCell(22, 2, 'TestScript.RegressionTest')
-data.setCell(22, 3, 8492);
+data.setCell(22, 3, 9554);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'TestCase_010_shop_List_DownloadPDF')
+data.setCell(23, 1, 'TestCase_014_TerminalDownloadPDF')
 data.setCell(23, 2, 'TestScript.RegressionTest')
-data.setCell(23, 3, 8046);
+data.setCell(23, 3, 7953);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'TestCase_014_TerminalDownloadPDF')
+data.setCell(24, 1, 'TestCase_015_TerminalDownloadExcel')
 data.setCell(24, 2, 'TestScript.RegressionTest')
-data.setCell(24, 3, 7566);
+data.setCell(24, 3, 7304);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'TestCase_015_TerminalDownloadExcel')
-data.setCell(25, 2, 'TestScript.RegressionTest')
-data.setCell(25, 3, 6871);
+data.setCell(25, 1, 'TestCase_021_TransactionsDownloadPDF')
+data.setCell(25, 2, 'TestScript.RegressionTestThree')
+data.setCell(25, 3, 3577);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'TestCase_021_TransactionsDownloadPDF')
+data.setCell(26, 1, 'TestCase_022_TransactionsDownloadExcel')
 data.setCell(26, 2, 'TestScript.RegressionTestThree')
-data.setCell(26, 3, 3604);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'TestCase_022_TransactionsDownloadExcel')
-data.setCell(27, 2, 'TestScript.RegressionTestThree')
-data.setCell(27, 3, 3121);
+data.setCell(26, 3, 3123);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -654,7 +699,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -669,6 +714,13 @@ return data;
                 <span class="ignored-method-name">TestCase_024_MonthlyReportPDF</span>
                 <br/>
                 <span class="ignored-method-name">TestCase_025_MonthlyReportExcel</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestScript.RegressionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestCase_008_PointSchemeUpdateShopList</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -687,130 +739,130 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestCase_001_Click_Shop_Group_Management</span>
-                <span class="method-start">11028 ms</span>
+                <span class="method-start">7152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_002_Shop_Group_Management_DownloadPDF</span>
-                <span class="method-start">54372 ms</span>
+                <span class="method-start">29536 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_003_Shop_Group_Management_DownloadExcel</span>
-                <span class="method-start">64077 ms</span>
+                <span class="method-start">39281 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_004_Shop_List_Verify_TradingName01</span>
-                <span class="method-start">73543 ms</span>
+                <span class="method-start">48836 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_005_Shop_List_Verify_TradingName02</span>
-                <span class="method-start">83341 ms</span>
+                <span class="method-start">68795 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_006_Create_Shop_list(Mannings, Mong, A111, GHD222, ANM1, Thanks, HK, F-23, Wan Chi, Wai, Account, 547754747, a@gmail.com,...)</span>
-                <span class="method-start">93755 ms</span>
+                <span class="method-start">151271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_006_Create_Shop_list(Seven11, Kong, A121, GHD333, ANM2, Thanks, HK, F-21, NP, Man, IT, 34636636, a@gmail.com, G2, 4, 5, 4...)</span>
-                <span class="method-start">183898 ms</span>
+                <span class="method-start">251362 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_007_PointSchemeShopList</span>
-                <span class="method-start">273756 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestCase_008_PointSchemeUpdateShopList</span>
-                <span class="method-start">321257 ms</span>
+                <span class="method-start">351340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_009_shopListAdvSearch</span>
-                <span class="method-start">358905 ms</span>
+                <span class="method-start">419444 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_010_shop_List_DownloadPDF</span>
-                <span class="method-start">390488 ms</span>
+                <span class="method-start">465010 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_011_shop_List_DownloadExcel</span>
-                <span class="method-start">398536 ms</span>
+                <span class="method-start">483714 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_012_CreateTerminal</span>
-                <span class="method-start">407031 ms</span>
+                <span class="method-start">502351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_013_TerminalSearch</span>
-                <span class="method-start">428966 ms</span>
+                <span class="method-start">528622 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_014_TerminalDownloadPDF</span>
-                <span class="method-start">453897 ms</span>
+                <span class="method-start">553982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_015_TerminalDownloadExcel</span>
-                <span class="method-start">461465 ms</span>
+                <span class="method-start">561936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">468337 ms</span>
+                <span class="method-start">569241 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.RegressionTestThree</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BaseCar(chrome)</span>
-                <span class="method-start">468337 ms</span>
+                <span class="method-start">569241 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestCase_016_UserGroupPermission_Internal</span>
-                <span class="method-start">475663 ms</span>
+                <span class="method-start">577841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_017_UserGroupPermission_Merchant</span>
-                <span class="method-start">505743 ms</span>
+                <span class="method-start">619682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_018_UserListForSetting_CreateMerchant</span>
-                <span class="method-start">530740 ms</span>
+                <span class="method-start">644654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_019_UserListForSetting_CreateInternal</span>
-                <span class="method-start">568372 ms</span>
+                <span class="method-start">682312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_020_Transactions</span>
-                <span class="method-start">594721 ms</span>
+                <span class="method-start">708666 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_021_TransactionsDownloadPDF</span>
-                <span class="method-start">635982 ms</span>
+                <span class="method-start">750007 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_022_TransactionsDownloadExcel</span>
-                <span class="method-start">639588 ms</span>
+                <span class="method-start">753585 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_023_MonthlyReport</span>
-                <span class="method-start">642712 ms</span>
+                <span class="method-start">756709 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_030_ShopGroupDelete</span>
-                <span class="method-start">670174 ms</span>
+                <span class="method-start">784149 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase_032_DeleteOthers</span>
-                <span class="method-start">692144 ms</span>
+                <span class="method-start">806511 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestCase_033_DeleteSetting</span>
-                <span class="method-start">711448 ms</span>
+                <span class="method-start">826020 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestCase_031_ShopListDelete</span>
-                <span class="method-start">809372 ms</span>
+                <span class="method-start">893694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">878796 ms</span>
+                <span class="method-start">948011 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

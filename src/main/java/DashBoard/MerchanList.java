@@ -31,7 +31,7 @@ public class MerchanList extends TestBase {
 		  Helper.staticWait(2000);
 		  //click on Shop List for open new 
 		  driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.
-		  staticWait(2000);
+		  staticWait(12000);
 		 // driver.findElement(By.id("newItemMain")).click();Helper.staticWait(2000);
 		
 	}
@@ -230,7 +230,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		 driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(12000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[1]")).click();Helper.staticWait(2000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, name), "Failed to download Expected document");
 	    System.out.println("ShopDownloadPDF finished..");
@@ -244,7 +244,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop group management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(12000);
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(3000);
 	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
 	    System.out.println("ShopDownloadExcel finished..");
@@ -258,7 +258,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(12000);
 		
 		
 		//click on new item button
@@ -304,7 +304,7 @@ public class MerchanList extends TestBase {
 		//chargeonbarn.sendKeys("3");chargeonbarn.sendKeys(Keys.ENTER);
 		
 		
-		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(5000);
+		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(15000);
 		
 		System.out.println("CreatePointScheme finished..");
 		
@@ -317,7 +317,7 @@ public class MerchanList extends TestBase {
 		
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(12000);
 		
 		
 		//click on new item button
@@ -354,7 +354,7 @@ public class MerchanList extends TestBase {
 			System.out.println("Please check Point update scheme");
 		}
 		
-		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(5000);
+		driver.findElement(By.id("sliderBtnSaveEdit")).click();Helper.staticWait(15000);
 
 		System.out.println("UpdatePointScheme finished..");
 	}
@@ -374,7 +374,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(12000);
 		System.out.println("click on new Item from shop list");
 		
 		//click on Advanced search button
@@ -471,7 +471,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(13000);
 		//click on Advance search 
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(3000);
 		//enter value in group name search 
@@ -492,7 +492,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
-		driver.findElement(By.id("YESDele")).click();Helper.staticWait(7000);
+		driver.findElement(By.id("YESDele")).click();Helper.staticWait(12000);
 		  System.out.println("DeleteGroupnameforshoplist finished..");
 	}
 	
@@ -502,7 +502,7 @@ public class MerchanList extends TestBase {
 		//shop menu
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
 		//shop list management 
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(13000);
 		//click on Advance search 
 		driver.findElement(By.id("advSearchBtn")).click();Helper.staticWait(7000);
 		//enter value in group name search 
@@ -523,7 +523,7 @@ public class MerchanList extends TestBase {
 		driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(3000);
 		driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[1]/input")).click();Helper.staticWait(3000);
 		driver.findElement(By.id("deleteBtn")).click();Helper.staticWait(3000);
-		driver.findElement(By.id("YESDele")).click();Helper.staticWait(5000);
+		driver.findElement(By.id("YESDele")).click();Helper.staticWait(15000);
 		System.out.println("DeleteGroupnameforshoplistSeven finished..");
 	}
 	
@@ -535,7 +535,7 @@ public void VerifyshopMerchantNameM() throws InterruptedException  {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
-		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(13000);
 		  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Mannings");Helper.staticWait(3000);
 		WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));
 			System.out.println((searchresult).getText());
@@ -556,7 +556,7 @@ public void VerifyshopMerchantNameS() throws InterruptedException  {
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
 	driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Shop')]")).click();Helper.staticWait(3000);
-	driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(3000);
+	driver.findElement(By.xpath("//a[contains(text(),'Shop List')]")).click();Helper.staticWait(13000);
 	  driver.findElement(By.xpath("//*[@id=\"table_main_filter\"]/label/input") ).sendKeys("Seven11");Helper.staticWait(3000);
 	  
 	WebElement searchresult = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td"));

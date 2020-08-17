@@ -6,9 +6,10 @@
     <classes>
       <class name="TestScript.RegressionTestThree">
         <methods>
-          <include name="TestCase_026_DailyReport"/>
+          <include name="TestCase_031_ShopListDelete"/>
           <include name="BaseCar"/>
           <include name="teardown"/>
+          <include name="TestCase_033_DeleteSetting"/>
         </methods>
       </class> <!-- TestScript.RegressionTestThree -->
     </classes>

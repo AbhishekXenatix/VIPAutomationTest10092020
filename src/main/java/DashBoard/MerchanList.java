@@ -217,7 +217,7 @@ public class MerchanList extends TestBase {
 				  
 				  WebElement Saveall1 = driver.findElement(By.id("sliderBtnSaveNew"));
 				  Saveall1.click();
-				  Helper.staticWait(5000);
+				  Helper.staticWait(12000);
 				  
 				  System.out.println("Shop List entry finished..");
 	}

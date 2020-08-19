@@ -108,7 +108,7 @@ public class Transactions extends TestBase {
 			}
 		}
 		
-		 driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(5000);
+		 driver.findElement(By.id("advSearch_Search")).click();Helper.staticWait(15000);
 
 	}
 	

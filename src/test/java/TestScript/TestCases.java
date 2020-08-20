@@ -18,6 +18,8 @@ import VIPqabase.TestBase;
 @Listeners({ExtentTestListner.class})
 public class TestCases extends TestBase{
 	
+	
+	
 	MerchanList ml = new MerchanList((WebDriver) driver);
 	ShopGroupManagement shopgroupm = new ShopGroupManagement((WebDriver) driver);
 	Terminal terminal = new Terminal((WebDriver) driver);

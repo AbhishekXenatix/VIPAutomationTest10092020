@@ -1,5 +1,6 @@
 package DashBoard;
 
+import java.io.File;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -15,13 +16,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import Util.Helper;
+import Util.PropertyFileReader;
 import VIPqabase.TestBase;
 
 public class MonthlyReport extends TestBase {
 	
 	Helper helper = new Helper();
 	 public static String downloadPath = "C:\\Users\\abhishek.g\\Downloads";
-	
+	 PropertyFileReader pfr = new PropertyFileReader();
 	public MonthlyReport(WebDriver driver) {}
 	
 	
@@ -41,14 +43,15 @@ public class MonthlyReport extends TestBase {
 		tdate.click();Helper.staticWait(3000);
 		
 		 Select mnth =  new Select (driver.findElement(By.xpath("//select[@class='ui-datepicker-month']")));
-		 mnth.selectByVisibleText("Jul");
+		 mnth.selectByVisibleText("Aug");
           
           tdate.sendKeys(Keys.ENTER);Helper.staticWait(3000);
 		
 		
 		
 		  //Shop Group
-		 WebElement eleshopgroup = driver.findElement(By.id("advSearch_Select_shop_group"));
+       
+		 WebElement eleshopgroup = driver.findElement(By.cssSelector("#advSearch_Select_shop_group"));
 		 eleshopgroup.click();Helper.staticWait(3000);Select select = new Select(eleshopgroup); 
 		 List<WebElement> dropdowneleshopgroup = select.getOptions();
 		 
@@ -80,9 +83,9 @@ public class MonthlyReport extends TestBase {
 				 */
 		         
 		         
-		         Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
-		         card.selectByVisibleText("GOLD");
-		          Helper.staticWait(3000);
+		        // Select card =  new Select (driver.findElement(By.id("advSearch_Select_card_tier")));
+		       //  card.selectByVisibleText("GOLD");
+		       //   Helper.staticWait(3000);
 			 
 		         
 		         
@@ -98,7 +101,8 @@ public class MonthlyReport extends TestBase {
 	
 	
 	public void ReportDownloadPDF() {
-		//String fileName = "Monthly_Billing_Report_202007_Abhishek.g.pdf";
+		try {
+		String name = "Monthly_Billing_Report_202007_Abhishek.g.pdf";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[1]")).click();
@@ -118,18 +122,74 @@ public class MonthlyReport extends TestBase {
 		   
 		    ((JavascriptExecutor) driver).executeScript("print()");Helper.staticWait(3000);
 		    driver.switchTo().window(currentHandle);Helper.staticWait(3000);
-		   
-		 	
+		   // File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+		   // String fileName = getLatestFile.getName();
+		   // System.out.println(fileName);
+		   // Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
 	}
 	
 	
 	public void ReportDownloadExcel() {
+		try {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	
+	String name = "Monthly_Billing_Report_202008_Abhishek.g.xls";
 		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(5000);
-	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Monthly_Billing_Report_202007_Abhishek.g.xlsx"), "Failed to download Expected document");
+		
+		File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+	   String fileName = getLatestFile.getName();
+	   System.out.println(fileName);
+	    Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+	    
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
 		
 		
+	}
+	
+	
+	public void MonthlyReportSearch() {
+		try {
+		
+		System.out.println("Search Monthly Report by wrong value ");
+		
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(),'Search:')]//input")));
+		  WebElement monthlyreportsearch =  driver.findElement(By.xpath("//label[contains(text(),'Search:')]//input"));
+		 
+		  monthlyreportsearch.sendKeys(pfr.getMonthlyReportSearch());Helper.staticWait(2000);
+		  
+		  
+		  //Trasearch.sendKeys("200559");Helper.staticWait(2000);
+		WebElement elereportsearch = driver.findElement(By.xpath("//td[@class='dataTables_empty']"));
+		String mesreportsearch = elereportsearch.getText();System.out.println(mesreportsearch);
+		Assert.assertEquals("No matching records found", mesreportsearch);Helper.staticWait(5000);
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
+	}
+	
+	
+	public void MonthlyReportExportRawData() {
+		try {
+		System.out.println("Click Monthly Report Raw Data  ");
+		
+		String name = "MONTHLY REPORT RECORD.xlsx";
+		driver.findElement(By.xpath("//button[@class='dt-button buttons-excel buttons-html5']")).click();Helper.staticWait(5000);
+		
+		File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+	   String fileName = getLatestFile.getName();
+	   System.out.println(fileName);
+	    Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
 	}
 	
 	

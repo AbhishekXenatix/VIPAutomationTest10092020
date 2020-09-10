@@ -15,11 +15,23 @@
   
   <classes>
 
+<class name="TestScript.ShopGroupManagementTest"></class>
+<class name="TestScript.ShopList"></class>
+<class name="TestScript.ShopImportExcel"></class>  
+<class name="TestScript.ShopListSearchTest"></class>
+<class name="TestScript.TerminalTest"></class>
+<class name="TestScript.Transaction"></class>
+<class name="TestScript.Reports"></class>
+<class name="TestScript.AdminFinanceReportTest"></class>
+<class name="TestScript.MerchantTest"></class>
 
 
-<class name="TestScript.RegressionTest"></class>  
-<class name="TestScript.RegressionTestThree"></class>
-<!-- <class name="TestScript.JiraTestCases"></class> -->
+
+
+
+
+
+<class name="TestScript.DeleteAll"></class>
 
   </classes>
   

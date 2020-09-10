@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -22,6 +22,8 @@ public class Helper extends TestBase{
 
 	private static String TEST_DATA_SHEET_PATH = "./src/main/java/Util/VIPTestData.xlsx";
 	public static String CONTACT_SHEET_NAME  = "Sheet1";
+	public static String CONTACT_SHEET_NAME_SEARCH_SHOPLIST = "Sheet2";
+	public static String CONTACT_SHEET_NAME_SEARCH_SHOPGROUPNAME = "Sheet3";
 	
 
 
@@ -85,13 +87,47 @@ public class Helper extends TestBase{
 	
 	
 
+	public static File getLatestFilefromDir(String dirPath){
+	    File dir = new File(dirPath);
+	    File[] files = dir.listFiles();
+	    if (files == null || files.length == 0) {
+	        return null;
+	    }
 	
+	    File lastModifiedFile = files[0];
+	    for (int i = 1; i < files.length; i++) {
+	       if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+	           lastModifiedFile = files[i];
+	       }
+	    }
+	    return lastModifiedFile;
+	}
 	
 	
 	
 
 
-
+public static void ReadFile() {
+	
+	 File file = new File("C:\\Users\\abhishek.g\\eclipse-workspace\\VIPSystemSCLAutomation\\src\\main\\resources\\Dashboard.properties");
+	 
+	 FileInputStream fileInput = null;
+		try {
+			fileInput = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		Properties prop = new Properties();
+		
+		//load properties file
+		try {
+			prop.load(fileInput);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+}
 
 
 

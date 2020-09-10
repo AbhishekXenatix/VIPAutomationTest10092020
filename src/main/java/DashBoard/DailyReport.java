@@ -1,5 +1,6 @@
 package DashBoard;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,17 +13,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import Util.Helper;
+import Util.PropertyFileReader;
 import VIPqabase.TestBase;
 
 public class DailyReport extends TestBase{
 	
 	 Helper helper = new Helper();
 	 public static String downloadPath = "C:\\Users\\abhishek.g\\Downloads";
-	
+	 PropertyFileReader pfr = new PropertyFileReader();
 	public DailyReport(WebDriver driver) {}
 	
 	
@@ -35,22 +39,33 @@ public class DailyReport extends TestBase{
 			driver.findElement(By.xpath("//a[@class='mm-btn mm-btn_next mm-listitem__btn mm-listitem__text'][contains(text(),'Report')]")).click();Helper.staticWait(3000);
 			driver.findElement(By.xpath("//a[contains(text(),'Daily Report')]")).click();Helper.staticWait(3000);
 			
-		   // driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(3000);
+			 DateFormat customFormat = new SimpleDateFormat("d"); 
+			 Date currentdate = new Date(); 
+			 String D = customFormat.format(currentdate); System.out.println(D);
+			 
+		    driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.staticWait(3000);
 		
 			
-			/*
-			 * DateFormat customFormat = new SimpleDateFormat("dd"); Date currentdate = new
-			 * Date(); String D = customFormat.format(currentdate); System.out.println(D);
-			 * 
-			 * //Date driver.findElement(By.id("advSearch_Date_txn_date")).click();Helper.
-			 * staticWait(2000); WebElement datePicker =
-			 * driver.findElement(By.id("ui-datepicker-div")); List<WebElement> noOfColumns
-			 * = datePicker .findElements(By.tagName("td")); for (WebElement cell :
-			 * noOfColumns) { if(cell.getText().equals(D)) {
-			 * cell.findElement(By.linkText(D)).click(); break; } }
-			 */
 			
-		}
+		    driver.findElement(By.id("ui-datepicker-div")).click();Helper.staticWait(3000);
+			  
+			 
+			  WebElement datePicker =driver.findElement(By.xpath("//table[contains(@class,'ui-datepicker-calendar')]")); 
+			  List<WebElement> noOfColumns = datePicker .findElements(By.tagName("td")); 
+			  for (WebElement cell :noOfColumns) { 
+				  if(cell.getText().equals(D)) {
+			            cell.findElement(By.linkText(D)).click();
+			            break;
+			            } 
+				  }
+				  }
+			 
+			
+		
+	
+	
+	
+	
 	
 	
 	
@@ -126,7 +141,7 @@ public class DailyReport extends TestBase{
 							 */							 
 							  Helper.staticWait(3000); 
 							  
-						      driver.findElement(By.xpath("//button[@class='btn btn-primary float-right reportsubmit']")).click() ;Helper.staticWait(5000);
+						      driver.findElement(By.xpath("//*[@id=\"advSearchContentWrapper\"]/div[2]/div/button")).click() ;Helper.staticWait(5000);
 							 
 						  
 						  }
@@ -148,8 +163,11 @@ public class DailyReport extends TestBase{
 	
 	
 	public void DailyReportpDownloadPDF() {
-		String fileName = "Shop Group List Record.pdf";
+
+		String name = "Shop Group List Record.pdf";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		try {
 		//shop menu
 		//driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
 		//shop group management 
@@ -172,7 +190,17 @@ public class DailyReport extends TestBase{
 		    ((JavascriptExecutor) driver).executeScript("print()");Helper.staticWait(3000);
 		    driver.switchTo().window(currentHandle);Helper.staticWait(3000);
 		    
-	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, fileName), "Failed to download Expected document");
+		    
+		    //File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+		    //String fileName = getLatestFile.getName();
+		    //System.out.println(fileName);
+		    //Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+		    
+		    
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
 		
 		
 	}
@@ -180,14 +208,69 @@ public class DailyReport extends TestBase{
 	
 	public void DailyReportDownloadExcel() {
 		
+		try {
+		
+		DateFormat customFormat = new SimpleDateFormat("yyyyMMdd"); 
+		 Date currentdate = new Date(); 
+		 String D = customFormat.format(currentdate); System.out.println("Today Date is = " +D);
+		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		String name = "Daily_Billing_Report_"+D+"_Abhishek.g";
 		//shop menu
 		//driver.findElement(By.xpath("//*[@id=\"panel-menu\"]/ul/li[6]/a")).click();Helper.staticWait(2000);
 		//shop group management 
 		//driver.findElement(By.xpath("//*[@id=\"mm-2\"]/ul/li[2]/a")).click();Helper.staticWait(2000);
-		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(2000);
-	    Assert.assertTrue(helper.isFileDownloaded(downloadPath, "Shop Group List Record.xlsx"), "Failed to download Expected document");
+		driver.findElement(By.xpath("//*[@id=\"table_main_wrapper\"]/div[2]/button[2]")).click();Helper.staticWait(5000);
 		
+		File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+	    String fileName = getLatestFile.getName();
+	    System.out.println(fileName);
+	   // Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+	    
+	    
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
+		
+		
+	}
+	
+	
+	
+public void DailyReportSearch() {
+		
+		System.out.println("Search Daily Report by Merchant ID ");
+		
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(text(),'Search:')]//input")));
+		  WebElement monthlyreportsearch =  driver.findElement(By.xpath("//label[contains(text(),'Search:')]//input"));
+		 
+		  monthlyreportsearch.sendKeys(pfr.getMerchantID());Helper.staticWait(2000);
+		  
+		  
+		  //Trasearch.sendKeys("200559");Helper.staticWait(2000);
+		WebElement elereportsearch = driver.findElement(By.xpath("//*[@id=\"table_main\"]/tbody/tr/td[6]"));
+		String mesreportsearch = elereportsearch.getText();System.out.println(mesreportsearch);
+		Assert.assertEquals("1000000004", mesreportsearch);Helper.staticWait(5000);
+	}
+	
+	
+	public void DailyReportExportRawData() {
+		try {
+		System.out.println("Click Daily Report Raw Data  ");
+		
+		String name = "DAILY REPORT RECORD.xlsx";
+		driver.findElement(By.xpath("//button[@class='dt-button buttons-excel buttons-html5']")).click();Helper.staticWait(5000);
+		
+		File getLatestFile = Helper.getLatestFilefromDir(downloadPath);
+	   String fileName = getLatestFile.getName();
+	   System.out.println(fileName);
+	    Assert.assertTrue(fileName.equalsIgnoreCase(name), "Downloaded file name is not matching with expected file name");
+	    
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e); 
+		}
 		
 	}
 	

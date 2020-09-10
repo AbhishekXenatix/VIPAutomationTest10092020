@@ -11,8 +11,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import Util.ExtentTestListner;
 
@@ -59,8 +61,10 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		
-		driver.findElement(By.id("details-button")).click();
-		driver.findElement(By.id("proceed-link")).click();
+		//driver.findElement(By.id("details-button")).click();
+		
+		//driver.findElement(By.partialLinkText("I understand the risk, but want to proceed")).click();
+		//driver.findElement(By.id("proceed-link")).click();
 		driver.findElement(By.id("login")).sendKeys("Abhishek.g");
 		driver.findElement(By.id("password")).sendKeys("Samsung@07");
 		driver.findElement(By.id("submitLogin")).click();
@@ -84,7 +88,7 @@ public class TestBase {
 	@AfterClass
 	public void teardown() {
 
-		//driver.close();
+		driver.close();
 		//driver = null;
 	
 	}
